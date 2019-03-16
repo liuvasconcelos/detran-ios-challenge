@@ -27,9 +27,15 @@ class HomeViewController: UIViewController, HomeViewContract {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     @IBAction func goToContractsListScreen(_ sender: Any) {
+        let contractsListViewController = ContractsListViewController.fromNib().or(ContractsListViewController())
+        
+        self.navigationController?.isNavigationBarHidden = false
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(contractsListViewController, animated: true)
     }
     
     @IBAction func goToAddContractScreen(_ sender: Any) {

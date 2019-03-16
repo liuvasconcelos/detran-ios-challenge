@@ -46,4 +46,40 @@ struct RequestUtils {
         return KeychainWrapper.standard.string(forKey: "token")
     }
     
+    public static func getRequestWithObjectsSent(path: String, method: HTTPMethod) -> URLRequest {
+        var token: String?
+        
+        let urlRequest = "http://159.65.244.68/\(path)"
+        var request    = URLRequest(url: URL(string: urlRequest)!)
+        
+        let authSaved = KeychainWrapper.standard.string(forKey: "auth").or("")
+        let auth      = Mapper<AuthResponse>().map(JSONString: authSaved)
+        
+        if let validAuth = auth {
+            token = validAuth.token
+        }
+        
+        request.httpMethod = method.rawValue
+        request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
+        
+        if let authenticationToken = token {
+            request.setValue("Bearer \(authenticationToken)", forHTTPHeaderField: "Authorization")
+        }
+        
+        return request
+    }
+    
+    public static func getCode() -> Int {
+        var financialsCode: Int?
+        let authSaved = KeychainWrapper.standard.string(forKey: "auth").or("")
+        let auth      = Mapper<AuthResponse>().map(JSONString: authSaved)
+        
+        if let validAuth = auth {
+            financialsCode = validAuth.financialUser?.financialsCode
+        }
+        
+        return financialsCode ?? 0
+    }
+    
+    
 }
