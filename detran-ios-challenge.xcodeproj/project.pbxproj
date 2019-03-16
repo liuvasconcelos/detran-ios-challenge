@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
+		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
+		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
+		53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530012223D83DA003AC039 /* AuthenticationRemoteDataSource.swift */; };
+		53530015223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530014223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift */; };
+		53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530018223D8437003AC039 /* SessionLocalDataSource.swift */; };
+		5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353001A223D8456003AC039 /* SessionLocalDataSourceImpl.swift */; };
+		5353001D223D8494003AC039 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353001C223D8494003AC039 /* AuthRequest.swift */; };
+		5353001F223D84B8003AC039 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353001E223D84B8003AC039 /* AuthResponse.swift */; };
+		53530021223D84DC003AC039 /* FinancialUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530020223D84DC003AC039 /* FinancialUser.swift */; };
+		53530025223D850F003AC039 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530024223D850F003AC039 /* Optional.swift */; };
+		53530027223D8526003AC039 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530026223D8526003AC039 /* UIViewController.swift */; };
+		5353002A223D8551003AC039 /* GetAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530029223D8551003AC039 /* GetAuth.swift */; };
+		5353002C223D856F003AC039 /* SaveSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353002B223D856F003AC039 /* SaveSession.swift */; };
+		53530032223D85BB003AC039 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530031223D85BB003AC039 /* LoginViewController.swift */; };
+		53530034223D85D6003AC039 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530033223D85D6003AC039 /* LoginPresenter.swift */; };
+		53530037223D85F7003AC039 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530036223D85F7003AC039 /* LoginContract.swift */; };
+		53530039223D8617003AC039 /* LoginViewControllerValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */; };
+		5353003B223D863E003AC039 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5353003A223D863E003AC039 /* LoginViewController.xib */; };
 		5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFD8223D7D54003AC039 /* AppDelegate.swift */; };
-		5353FFDB223D7D54003AC039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFDA223D7D54003AC039 /* ViewController.swift */; };
-		5353FFDE223D7D54003AC039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDC223D7D54003AC039 /* Main.storyboard */; };
 		5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDF223D7D55003AC039 /* Assets.xcassets */; };
-		5353FFE3223D7D55003AC039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */; };
 		5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */; };
 		5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */; };
 		71C24A3E4833D30229476235 /* Pods_detran_ios_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1775F2CE5123780F75B25A /* Pods_detran_ios_challengeTests.framework */; };
@@ -38,12 +54,28 @@
 
 /* Begin PBXFileReference section */
 		4A6DF830429A1E150F271380 /* Pods-detran-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detran-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-detran-ios-challengeTests/Pods-detran-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
+		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
+		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
+		53530012223D83DA003AC039 /* AuthenticationRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteDataSource.swift; sourceTree = "<group>"; };
+		53530014223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		53530018223D8437003AC039 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
+		5353001A223D8456003AC039 /* SessionLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		5353001C223D8494003AC039 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		5353001E223D84B8003AC039 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		53530020223D84DC003AC039 /* FinancialUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialUser.swift; sourceTree = "<group>"; };
+		53530024223D850F003AC039 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		53530026223D8526003AC039 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		53530029223D8551003AC039 /* GetAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAuth.swift; sourceTree = "<group>"; };
+		5353002B223D856F003AC039 /* SaveSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSession.swift; sourceTree = "<group>"; };
+		53530031223D85BB003AC039 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		53530033223D85D6003AC039 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		53530036223D85F7003AC039 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerValidationExtension.swift; sourceTree = "<group>"; };
+		5353003A223D863E003AC039 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5353FFD5223D7D54003AC039 /* detran-ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detran-ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353FFD8223D7D54003AC039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5353FFDA223D7D54003AC039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5353FFDD223D7D54003AC039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5353FFDF223D7D55003AC039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5353FFE2223D7D55003AC039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5353FFE4223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5353FFE9223D7D55003AC039 /* detran-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeTests.swift; sourceTree = "<group>"; };
@@ -112,6 +144,142 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		53530006223D82EF003AC039 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				53530016223D8419003AC039 /* Local */,
+				53530010223D83B2003AC039 /* Remote */,
+				53530009223D8316003AC039 /* Common */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		53530007223D82F9003AC039 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5353001C223D8494003AC039 /* AuthRequest.swift */,
+				5353001E223D84B8003AC039 /* AuthResponse.swift */,
+				53530020223D84DC003AC039 /* FinancialUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53530008223D8300003AC039 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5353002D223D858C003AC039 /* Modules */,
+				53530028223D853D003AC039 /* Usecases */,
+				53530022223D84F9003AC039 /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		53530009223D8316003AC039 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5353000A223D834B003AC039 /* RequestUtils.swift */,
+				5353000C223D8355003AC039 /* CallbackEnum.swift */,
+				5353000E223D8369003AC039 /* BaseCallback.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		53530010223D83B2003AC039 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				53530011223D83C1003AC039 /* Authentication */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		53530011223D83C1003AC039 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				53530012223D83DA003AC039 /* AuthenticationRemoteDataSource.swift */,
+				53530014223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		53530016223D8419003AC039 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				53530017223D842E003AC039 /* Session */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		53530017223D842E003AC039 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				53530018223D8437003AC039 /* SessionLocalDataSource.swift */,
+				5353001A223D8456003AC039 /* SessionLocalDataSourceImpl.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		53530022223D84F9003AC039 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				53530023223D8502003AC039 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		53530023223D8502003AC039 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53530024223D850F003AC039 /* Optional.swift */,
+				53530026223D8526003AC039 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		53530028223D853D003AC039 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				53530029223D8551003AC039 /* GetAuth.swift */,
+				5353002B223D856F003AC039 /* SaveSession.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		5353002D223D858C003AC039 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5353002E223D8591003AC039 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5353002E223D8591003AC039 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53530030223D85AA003AC039 /* Extensions */,
+				5353002F223D85A1003AC039 /* View */,
+				53530031223D85BB003AC039 /* LoginViewController.swift */,
+				53530033223D85D6003AC039 /* LoginPresenter.swift */,
+				53530036223D85F7003AC039 /* LoginContract.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5353002F223D85A1003AC039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5353003A223D863E003AC039 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53530030223D85AA003AC039 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5353FFCC223D7D54003AC039 = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +305,11 @@
 		5353FFD7223D7D54003AC039 /* detran-ios-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				53530008223D8300003AC039 /* Application */,
+				53530007223D82F9003AC039 /* Models */,
+				53530006223D82EF003AC039 /* DataSource */,
 				5353FFD8223D7D54003AC039 /* AppDelegate.swift */,
-				5353FFDA223D7D54003AC039 /* ViewController.swift */,
-				5353FFDC223D7D54003AC039 /* Main.storyboard */,
 				5353FFDF223D7D55003AC039 /* Assets.xcassets */,
-				5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */,
 				5353FFE4223D7D55003AC039 /* Info.plist */,
 			);
 			path = "detran-ios-challenge";
@@ -273,9 +441,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFE3223D7D55003AC039 /* LaunchScreen.storyboard in Resources */,
+				5353003B223D863E003AC039 /* LoginViewController.xib in Resources */,
 				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
-				5353FFDE223D7D54003AC039 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +552,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFDB223D7D54003AC039 /* ViewController.swift in Sources */,
+				53530027223D8526003AC039 /* UIViewController.swift in Sources */,
+				5353000B223D834B003AC039 /* RequestUtils.swift in Sources */,
+				53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */,
+				53530021223D84DC003AC039 /* FinancialUser.swift in Sources */,
+				53530025223D850F003AC039 /* Optional.swift in Sources */,
+				53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */,
 				5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */,
+				5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */,
+				5353000F223D8369003AC039 /* BaseCallback.swift in Sources */,
+				53530037223D85F7003AC039 /* LoginContract.swift in Sources */,
+				5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */,
+				5353002A223D8551003AC039 /* GetAuth.swift in Sources */,
+				53530034223D85D6003AC039 /* LoginPresenter.swift in Sources */,
+				5353001F223D84B8003AC039 /* AuthResponse.swift in Sources */,
+				53530039223D8617003AC039 /* LoginViewControllerValidationExtension.swift in Sources */,
+				53530032223D85BB003AC039 /* LoginViewController.swift in Sources */,
+				53530015223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift in Sources */,
+				5353001D223D8494003AC039 /* AuthRequest.swift in Sources */,
+				5353002C223D856F003AC039 /* SaveSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,25 +604,6 @@
 			targetProxy = 5353FFF5223D7D55003AC039 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5353FFDC223D7D54003AC039 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5353FFDD223D7D54003AC039 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5353FFE2223D7D55003AC039 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53530001223D7D55003AC039 /* Debug */ = {
