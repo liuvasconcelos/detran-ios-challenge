@@ -28,13 +28,7 @@ public class FinancialUser: Codable, Mappable {
     public func mapping(map: Map) {
         uuid           <- map["UUID"]
         financialsCode <- map["financials_code"]
-        name           <- map["name"]
-    }
-    
-    enum CodingKeys: String, CodingKey {
-        case name
-        case uuid = "UUID"
-        case financialsCode = "financials_code"
+        name           <- map["Name"]
     }
     
 }

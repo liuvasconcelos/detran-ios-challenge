@@ -10,9 +10,9 @@ import Foundation
 
 public struct AuthRequest: Codable {
     
-    let financialsCode: Int
-    let userName: String
-    let password: String
+    let financialsCode: Int?
+    let userName: String?
+    let password: String?
     
     init(financialsCode: Int,
          userName: String,
@@ -22,4 +22,9 @@ public struct AuthRequest: Codable {
         self.password       = password
     }
     
+    enum CodingKeys: String, CodingKey {
+        case password
+        case financialsCode = "financials_code"
+        case userName = "username"
+    }
 }
