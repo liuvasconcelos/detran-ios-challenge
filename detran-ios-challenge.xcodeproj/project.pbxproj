@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFD8223D7D54003AC039 /* AppDelegate.swift */; };
+		5353FFDB223D7D54003AC039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFDA223D7D54003AC039 /* ViewController.swift */; };
+		5353FFDE223D7D54003AC039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDC223D7D54003AC039 /* Main.storyboard */; };
+		5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDF223D7D55003AC039 /* Assets.xcassets */; };
+		5353FFE3223D7D55003AC039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */; };
+		5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */; };
+		5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5353FFEA223D7D55003AC039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5353FFCD223D7D54003AC039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5353FFD4223D7D54003AC039;
+			remoteInfo = "detran-ios-challenge";
+		};
+		5353FFF5223D7D55003AC039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5353FFCD223D7D54003AC039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5353FFD4223D7D54003AC039;
+			remoteInfo = "detran-ios-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5353FFD5223D7D54003AC039 /* detran-ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detran-ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5353FFD8223D7D54003AC039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5353FFDA223D7D54003AC039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5353FFDD223D7D54003AC039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5353FFDF223D7D55003AC039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5353FFE2223D7D55003AC039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5353FFE4223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5353FFE9223D7D55003AC039 /* detran-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeTests.swift; sourceTree = "<group>"; };
+		5353FFEF223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5353FFF4223D7D55003AC039 /* detran-ios-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeUITests.swift; sourceTree = "<group>"; };
+		5353FFFA223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5353FFD2223D7D54003AC039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353FFE6223D7D55003AC039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353FFF1223D7D55003AC039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5353FFCC223D7D54003AC039 = {
+			isa = PBXGroup;
+			children = (
+				5353FFD7223D7D54003AC039 /* detran-ios-challenge */,
+				5353FFEC223D7D55003AC039 /* detran-ios-challengeTests */,
+				5353FFF7223D7D55003AC039 /* detran-ios-challengeUITests */,
+				5353FFD6223D7D54003AC039 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5353FFD6223D7D54003AC039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5353FFD5223D7D54003AC039 /* detran-ios-challenge.app */,
+				5353FFE9223D7D55003AC039 /* detran-ios-challengeTests.xctest */,
+				5353FFF4223D7D55003AC039 /* detran-ios-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5353FFD7223D7D54003AC039 /* detran-ios-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				5353FFD8223D7D54003AC039 /* AppDelegate.swift */,
+				5353FFDA223D7D54003AC039 /* ViewController.swift */,
+				5353FFDC223D7D54003AC039 /* Main.storyboard */,
+				5353FFDF223D7D55003AC039 /* Assets.xcassets */,
+				5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */,
+				5353FFE4223D7D55003AC039 /* Info.plist */,
+			);
+			path = "detran-ios-challenge";
+			sourceTree = "<group>";
+		};
+		5353FFEC223D7D55003AC039 /* detran-ios-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */,
+				5353FFEF223D7D55003AC039 /* Info.plist */,
+			);
+			path = "detran-ios-challengeTests";
+			sourceTree = "<group>";
+		};
+		5353FFF7223D7D55003AC039 /* detran-ios-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */,
+				5353FFFA223D7D55003AC039 /* Info.plist */,
+			);
+			path = "detran-ios-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5353FFD4223D7D54003AC039 /* detran-ios-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5353FFFD223D7D55003AC039 /* Build configuration list for PBXNativeTarget "detran-ios-challenge" */;
+			buildPhases = (
+				5353FFD1223D7D54003AC039 /* Sources */,
+				5353FFD2223D7D54003AC039 /* Frameworks */,
+				5353FFD3223D7D54003AC039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "detran-ios-challenge";
+			productName = "detran-ios-challenge";
+			productReference = 5353FFD5223D7D54003AC039 /* detran-ios-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5353FFE8223D7D55003AC039 /* detran-ios-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53530000223D7D55003AC039 /* Build configuration list for PBXNativeTarget "detran-ios-challengeTests" */;
+			buildPhases = (
+				5353FFE5223D7D55003AC039 /* Sources */,
+				5353FFE6223D7D55003AC039 /* Frameworks */,
+				5353FFE7223D7D55003AC039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5353FFEB223D7D55003AC039 /* PBXTargetDependency */,
+			);
+			name = "detran-ios-challengeTests";
+			productName = "detran-ios-challengeTests";
+			productReference = 5353FFE9223D7D55003AC039 /* detran-ios-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5353FFF3223D7D55003AC039 /* detran-ios-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53530003223D7D55003AC039 /* Build configuration list for PBXNativeTarget "detran-ios-challengeUITests" */;
+			buildPhases = (
+				5353FFF0223D7D55003AC039 /* Sources */,
+				5353FFF1223D7D55003AC039 /* Frameworks */,
+				5353FFF2223D7D55003AC039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5353FFF6223D7D55003AC039 /* PBXTargetDependency */,
+			);
+			name = "detran-ios-challengeUITests";
+			productName = "detran-ios-challengeUITests";
+			productReference = 5353FFF4223D7D55003AC039 /* detran-ios-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5353FFCD223D7D54003AC039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Livia Vasconcelos";
+				TargetAttributes = {
+					5353FFD4223D7D54003AC039 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5353FFE8223D7D55003AC039 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5353FFD4223D7D54003AC039;
+					};
+					5353FFF3223D7D55003AC039 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5353FFD4223D7D54003AC039;
+					};
+				};
+			};
+			buildConfigurationList = 5353FFD0223D7D54003AC039 /* Build configuration list for PBXProject "detran-ios-challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5353FFCC223D7D54003AC039;
+			productRefGroup = 5353FFD6223D7D54003AC039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5353FFD4223D7D54003AC039 /* detran-ios-challenge */,
+				5353FFE8223D7D55003AC039 /* detran-ios-challengeTests */,
+				5353FFF3223D7D55003AC039 /* detran-ios-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5353FFD3223D7D54003AC039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5353FFE3223D7D55003AC039 /* LaunchScreen.storyboard in Resources */,
+				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
+				5353FFDE223D7D54003AC039 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353FFE7223D7D55003AC039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353FFF2223D7D55003AC039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5353FFD1223D7D54003AC039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5353FFDB223D7D54003AC039 /* ViewController.swift in Sources */,
+				5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353FFE5223D7D55003AC039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5353FFF0223D7D55003AC039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5353FFEB223D7D55003AC039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5353FFD4223D7D54003AC039 /* detran-ios-challenge */;
+			targetProxy = 5353FFEA223D7D55003AC039 /* PBXContainerItemProxy */;
+		};
+		5353FFF6223D7D55003AC039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5353FFD4223D7D54003AC039 /* detran-ios-challenge */;
+			targetProxy = 5353FFF5223D7D55003AC039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5353FFDC223D7D54003AC039 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5353FFDD223D7D54003AC039 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5353FFE2223D7D55003AC039 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53530001223D7D55003AC039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9CMSL6QFV;
+				INFOPLIST_FILE = "detran-ios-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/detran-ios-challenge.app/detran-ios-challenge";
+			};
+			name = Debug;
+		};
+		53530002223D7D55003AC039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9CMSL6QFV;
+				INFOPLIST_FILE = "detran-ios-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/detran-ios-challenge.app/detran-ios-challenge";
+			};
+			name = Release;
+		};
+		53530004223D7D55003AC039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9CMSL6QFV;
+				INFOPLIST_FILE = "detran-ios-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "detran-ios-challenge";
+			};
+			name = Debug;
+		};
+		53530005223D7D55003AC039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9CMSL6QFV;
+				INFOPLIST_FILE = "detran-ios-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "detran-ios-challenge";
+			};
+			name = Release;
+		};
+		5353FFFB223D7D55003AC039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5353FFFC223D7D55003AC039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5353FFFE223D7D55003AC039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9CMSL6QFV;
+				INFOPLIST_FILE = "detran-ios-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5353FFFF223D7D55003AC039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9CMSL6QFV;
+				INFOPLIST_FILE = "detran-ios-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53530000223D7D55003AC039 /* Build configuration list for PBXNativeTarget "detran-ios-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53530001223D7D55003AC039 /* Debug */,
+				53530002223D7D55003AC039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53530003223D7D55003AC039 /* Build configuration list for PBXNativeTarget "detran-ios-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53530004223D7D55003AC039 /* Debug */,
+				53530005223D7D55003AC039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5353FFD0223D7D54003AC039 /* Build configuration list for PBXProject "detran-ios-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5353FFFB223D7D55003AC039 /* Debug */,
+				5353FFFC223D7D55003AC039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5353FFFD223D7D55003AC039 /* Build configuration list for PBXNativeTarget "detran-ios-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5353FFFE223D7D55003AC039 /* Debug */,
+				5353FFFF223D7D55003AC039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5353FFCD223D7D54003AC039 /* Project object */;
+}
