@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - IQKeyboardManagerSwift (6.2.0)
+  - ObjectMapper (3.4.2)
+  - SwiftKeychainWrapper (3.0.1)
+  - SwiftValidator (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.7.3)
+  - AlamofireObjectMapper (~> 5.2)
+  - IQKeyboardManagerSwift (~> 6.2.0)
+  - ObjectMapper (~> 3.4)
+  - SwiftKeychainWrapper (= 3.0.1)
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - IQKeyboardManagerSwift
+    - ObjectMapper
+    - SwiftKeychainWrapper
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :branch: master
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :commit: 2d03c5479e611386fbdf523209c64d2dd09ebd26
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+  SwiftValidator: 58c155c8ae8421ef716a96e52a49984dd54c700c
+
+PODFILE CHECKSUM: ce8cd9600b579ddbaff5fa3124ed8192b32fdb47
+
+COCOAPODS: 1.5.3
