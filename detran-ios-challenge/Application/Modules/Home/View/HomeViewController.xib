@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="w6F-9P-4It" customClass="HomeViewController" customModule="detran_ios_challenge" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="eVx-8c-rVl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVh-Xc-JkI">
+                        <rect key="frame" x="16" y="179" width="288" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Visualizar contratos"/>
+                        <connections>
+                            <action selector="goToContractsListScreen:" destination="w6F-9P-4It" eventType="touchUpInside" id="7yX-wl-iYy"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5c-qk-NSx">
+                        <rect key="frame" x="16" y="217" width="288" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Cadastrar contratos"/>
+                        <connections>
+                            <action selector="goToAddContractScreen:" destination="w6F-9P-4It" eventType="touchUpInside" id="HXA-hu-zhj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8d-yE-du6">
+                        <rect key="frame" x="16" y="255" width="288" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Cadastrar veículos"/>
+                        <connections>
+                            <action selector="goToAddVehicleScreen:" destination="w6F-9P-4It" eventType="touchUpInside" id="Fyf-Gl-4w0"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT5-Fg-uDt">
+                        <rect key="frame" x="16" y="293" width="288" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Cadastrar credores"/>
+                        <connections>
+                            <action selector="goToAddCreditorScreen:" destination="w6F-9P-4It" eventType="touchUpInside" id="fyP-aC-ySu"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nZ-H3-pnU">
+                        <rect key="frame" x="16" y="508" width="288" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <state key="normal" title="Sair"/>
+                        <connections>
+                            <action selector="logout:" destination="w6F-9P-4It" eventType="touchUpInside" id="FVZ-XA-DoZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <viewLayoutGuide key="safeArea" id="dEb-W0-Ho7"/>
+            </view>
+            <connections>
+                <outlet property="addAContractButton" destination="X5c-qk-NSx" id="yXY-rh-euW"/>
+                <outlet property="addACreditorButton" destination="ZT5-Fg-uDt" id="Bzg-Ky-i4D"/>
+                <outlet property="addAVehicleButton" destination="i8d-yE-du6" id="riV-mR-Rpq"/>
+                <outlet property="logoutButton" destination="8nZ-H3-pnU" id="eAB-MI-bSl"/>
+                <outlet property="seeAllContractsButton" destination="yVh-Xc-JkI" id="5My-Do-PS7"/>
+            </connections>
+            <point key="canvasLocation" x="952.5" y="-280.98591549295776"/>
+        </viewController>
+    </objects>
+</document>

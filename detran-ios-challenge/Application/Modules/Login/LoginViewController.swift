@@ -22,7 +22,8 @@ class LoginViewController: UIViewController, LoginViewContract {
     lazy var presenter: LoginPresenterContract = {
         return LoginPresenter(view: self,
                               getAuth: GetAuth(remoteDataSource: AuthenticationRemoteDataSourceImpl.shared),
-                              saveSession: SaveSession(localDataSource: SessionLocalDataSourceImpl.shared))
+                              saveSession: SaveSession(localDataSource: SessionLocalDataSourceImpl.shared),
+                              getUserSession: GetUserSession(localDataSource: SessionLocalDataSourceImpl.shared))
     }()
     
     override func viewDidLoad() {
@@ -32,6 +33,10 @@ class LoginViewController: UIViewController, LoginViewContract {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if presenter.isUserLogged() {
+            self.goToHomeScreen()
+        }
     }
     
     @IBAction func login(_ sender: Any) {
@@ -45,7 +50,15 @@ class LoginViewController: UIViewController, LoginViewContract {
     }
     
     func loginSuccessful() {
-        print("success")
+        self.goToHomeScreen()
+    }
+    
+    fileprivate func goToHomeScreen() {
+        let homeViewController = HomeViewController.fromNib().or(HomeViewController())
+    
+        self.navigationController?.isNavigationBarHidden = false
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(homeViewController, animated: true)
     }
     
     func showLoader() {

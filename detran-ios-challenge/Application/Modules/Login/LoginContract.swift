@@ -15,5 +15,6 @@ protocol LoginViewContract {
 
 protocol LoginPresenterContract {
     func login(financialsCode: Int, userName: String, password: String)
+    func isUserLogged() -> Bool
 }
 

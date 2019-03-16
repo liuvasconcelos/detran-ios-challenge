@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534ADDCF223D90CA00F88F27 /* GetUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDCE223D90CA00F88F27 /* GetUserSession.swift */; };
 		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
 		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
 		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
@@ -26,6 +27,11 @@
 		53530037223D85F7003AC039 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530036223D85F7003AC039 /* LoginContract.swift */; };
 		53530039223D8617003AC039 /* LoginViewControllerValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */; };
 		5353003B223D863E003AC039 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5353003A223D863E003AC039 /* LoginViewController.xib */; };
+		5353003F223D8D21003AC039 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353003E223D8D21003AC039 /* HomeViewController.swift */; };
+		53530041223D8D5B003AC039 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53530040223D8D5B003AC039 /* HomeViewController.xib */; };
+		53530043223D8F5A003AC039 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530042223D8F5A003AC039 /* HomePresenter.swift */; };
+		53530045223D8F65003AC039 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530044223D8F65003AC039 /* HomeContract.swift */; };
+		53530047223D8FC3003AC039 /* DetroySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530046223D8FC3003AC039 /* DetroySession.swift */; };
 		5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFD8223D7D54003AC039 /* AppDelegate.swift */; };
 		5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDF223D7D55003AC039 /* Assets.xcassets */; };
 		5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */; };
@@ -54,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		4A6DF830429A1E150F271380 /* Pods-detran-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detran-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-detran-ios-challengeTests/Pods-detran-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		534ADDCE223D90CA00F88F27 /* GetUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserSession.swift; sourceTree = "<group>"; };
 		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
 		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
 		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
@@ -73,6 +80,11 @@
 		53530036223D85F7003AC039 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerValidationExtension.swift; sourceTree = "<group>"; };
 		5353003A223D863E003AC039 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5353003E223D8D21003AC039 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53530040223D8D5B003AC039 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		53530042223D8F5A003AC039 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		53530044223D8F65003AC039 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		53530046223D8FC3003AC039 /* DetroySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroySession.swift; sourceTree = "<group>"; };
 		5353FFD5223D7D54003AC039 /* detran-ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detran-ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353FFD8223D7D54003AC039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5353FFDF223D7D55003AC039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +252,8 @@
 			children = (
 				53530029223D8551003AC039 /* GetAuth.swift */,
 				5353002B223D856F003AC039 /* SaveSession.swift */,
+				53530046223D8FC3003AC039 /* DetroySession.swift */,
+				534ADDCE223D90CA00F88F27 /* GetUserSession.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -248,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				5353002E223D8591003AC039 /* Login */,
+				5353003C223D8D03003AC039 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -278,6 +293,25 @@
 				53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5353003C223D8D03003AC039 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5353003D223D8D0F003AC039 /* View */,
+				5353003E223D8D21003AC039 /* HomeViewController.swift */,
+				53530042223D8F5A003AC039 /* HomePresenter.swift */,
+				53530044223D8F65003AC039 /* HomeContract.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5353003D223D8D0F003AC039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53530040223D8D5B003AC039 /* HomeViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5353FFCC223D7D54003AC039 = {
@@ -443,6 +477,7 @@
 			files = (
 				5353003B223D863E003AC039 /* LoginViewController.xib in Resources */,
 				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
+				53530041223D8D5B003AC039 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,11 +587,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53530043223D8F5A003AC039 /* HomePresenter.swift in Sources */,
 				53530027223D8526003AC039 /* UIViewController.swift in Sources */,
+				534ADDCF223D90CA00F88F27 /* GetUserSession.swift in Sources */,
 				5353000B223D834B003AC039 /* RequestUtils.swift in Sources */,
 				53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */,
 				53530021223D84DC003AC039 /* FinancialUser.swift in Sources */,
 				53530025223D850F003AC039 /* Optional.swift in Sources */,
+				53530045223D8F65003AC039 /* HomeContract.swift in Sources */,
 				53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */,
 				5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */,
 				5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */,
@@ -567,8 +605,10 @@
 				53530034223D85D6003AC039 /* LoginPresenter.swift in Sources */,
 				5353001F223D84B8003AC039 /* AuthResponse.swift in Sources */,
 				53530039223D8617003AC039 /* LoginViewControllerValidationExtension.swift in Sources */,
+				5353003F223D8D21003AC039 /* HomeViewController.swift in Sources */,
 				53530032223D85BB003AC039 /* LoginViewController.swift in Sources */,
 				53530015223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift in Sources */,
+				53530047223D8FC3003AC039 /* DetroySession.swift in Sources */,
 				5353001D223D8494003AC039 /* AuthRequest.swift in Sources */,
 				5353002C223D856F003AC039 /* SaveSession.swift in Sources */,
 			);

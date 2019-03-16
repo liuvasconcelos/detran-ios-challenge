@@ -13,11 +13,13 @@ class LoginPresenter: LoginPresenterContract {
     private let view: LoginViewContract
     private let getAuth: GetAuth
     private let saveSession: SaveSession
+    private let getUserSession: GetUserSession
     
-    init(view: LoginViewContract, getAuth: GetAuth, saveSession: SaveSession) {
-        self.view        = view
-        self.getAuth     = getAuth
-        self.saveSession = saveSession
+    init(view: LoginViewContract, getAuth: GetAuth, saveSession: SaveSession, getUserSession: GetUserSession) {
+        self.view           = view
+        self.getAuth        = getAuth
+        self.saveSession    = saveSession
+        self.getUserSession = getUserSession
     }
     
     func login(financialsCode: Int, userName: String, password: String) {
@@ -34,8 +36,11 @@ class LoginPresenter: LoginPresenterContract {
                 self.view.hideLoader()
                 self.view.show(error: error.debugDescription)
             })
-            
         }
+    }
+    
+    func isUserLogged() -> Bool {
+        return getUserSession.isUserLogged()
     }
     
 }

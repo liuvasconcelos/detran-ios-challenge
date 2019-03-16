@@ -11,4 +11,5 @@ import Foundation
 public protocol SessionLocalDataSource: class {
     func save(auth: AuthResponse)
     func destroySession() -> Bool
+    func isLogged() -> Bool
 }
