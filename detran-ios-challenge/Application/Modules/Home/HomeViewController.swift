@@ -31,30 +31,25 @@ class HomeViewController: UIViewController, HomeViewContract {
     }
     
     @IBAction func goToContractsListScreen(_ sender: Any) {
-        let contractsListViewController = ContractsListViewController.fromNib().or(ContractsListViewController())
-        
-        self.navigationController?.isNavigationBarHidden = false
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationController?.pushViewController(contractsListViewController, animated: true)
+        self.open(viewController: ContractsListViewController.fromNib().or(ContractsListViewController()))
     }
     
     @IBAction func goToAddContractScreen(_ sender: Any) {
-        let createContractViewController = CreateContractViewController.fromNib().or(CreateContractViewController())
-        
-        self.navigationController?.isNavigationBarHidden = false
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationController?.pushViewController(createContractViewController, animated: true)
+        self.open(viewController: CreateContractViewController.fromNib().or(CreateContractViewController()))
     }
     
     @IBAction func goToAddVehicleScreen(_ sender: Any) {
-        let createVehicleViewController = CreateVehicleViewController.fromNib().or(CreateVehicleViewController())
-        
-        self.navigationController?.isNavigationBarHidden = false
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationController?.pushViewController(createVehicleViewController, animated: true)
+        self.open(viewController: CreateVehicleViewController.fromNib().or(CreateVehicleViewController()))
     }
     
     @IBAction func goToAddCreditorScreen(_ sender: Any) {
+        self.open(viewController: CreateCredorViewController.fromNib().or(CreateCredorViewController()))
+    }
+    
+    fileprivate func open(viewController: UIViewController) {
+        self.navigationController?.isNavigationBarHidden = false
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func logout(_ sender: Any) {

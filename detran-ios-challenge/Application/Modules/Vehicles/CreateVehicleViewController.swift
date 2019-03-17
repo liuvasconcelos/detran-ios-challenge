@@ -14,7 +14,7 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
     
     lazy var presenter: CreateVehiclePresenterContract = {
         return CreateVehiclePresenter(view: self,
-                                      createVehicle: CreateVehicle(remoteDataSource: ContractRemoteDataSourceImpl.shared))
+                                      createContract: CreateContract(remoteDataSource: ContractRemoteDataSourceImpl.shared))
     }()
     
     override func viewDidLoad() {
@@ -35,7 +35,8 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
                                                                              reprice: "b",
                                                                              modelYear: 2019,
                                                                              manufactureYear: 2019,
-                                                                             ufGravameRegister: "b")))
+                                                                             ufGravameRegister: "b"),
+                                                            credor: nil))
     }
     
     func showSuccessAlert() {

@@ -53,7 +53,8 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
                                                                                       contractFeeValue: 1,
                                                                                       mainRecipientPayment: "a",
                                                                                       mainRecipientCpfCnpj: "a"),
-                                                             vehicle: nil))
+                                                             vehicle: nil,
+                                                             credor: nil))
     }
     
     func showSuccessAlert() {

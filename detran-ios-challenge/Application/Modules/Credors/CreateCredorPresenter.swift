@@ -1,5 +1,5 @@
 //
-//  CreateVehiclePresenter.swift
+//  CreateCredorPresenter.swift
 //  detran-ios-challenge
 //
 //  Created by Livia Vasconcelos on 17/03/19.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class CreateVehiclePresenter: CreateVehiclePresenterContract {
+class CreateCredorPresenter: CreateCredorPresenterContract {
     
-    private let view: CreateVehicleViewContract
+    private let view: CreateCredorViewContract
     private let createContract: CreateContract
     
-    init(view: CreateVehicleViewContract, createContract: CreateContract) {
+    init(view: CreateCredorViewContract, createContract: CreateContract) {
         self.view           = view
         self.createContract = createContract
     }
     
-    func sendFormToCreate(vehicle: ContractRequest) {
+    func sendFormToCreate(credor: ContractRequest) {
         self.view.showLoader()
-        createContract.sendFormToCreate(contract: vehicle) { (callback) in
+        createContract.sendFormToCreate(contract: credor) { (callback) in
             callback.onSuccess({ (_) in
                 self.view.hideLoader()
                 self.view.showSuccessAlert()

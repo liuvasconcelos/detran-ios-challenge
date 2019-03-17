@@ -17,7 +17,7 @@ public struct ContractRequest: Codable {
     
     init(code: Int,
          endUsersDocument: String,
-         personal: Personal?, contract: InsideContract?, vehicle: Vehicle?) {
+         personal: Personal?, contract: InsideContract?, vehicle: Vehicle?, credor: Credor?) {
         self.code               = code
         self.financialUsersUuid = RequestUtils.getUserUuid()
         self.endUsersDocument   = endUsersDocument
@@ -27,6 +27,8 @@ public struct ContractRequest: Codable {
                                                                             contract: contractRequest))
         } else if let vehicleRequest = vehicle {
             self.data = RequestUtils.getJsonDataString(object: VehicleData(vehicle: vehicleRequest))
+        } else if let personalRequest = personal, let credorRequest = credor {
+            self.data = RequestUtils.getJsonDataString(object: CredorData(personal: personalRequest, credor: credorRequest))
         }
        
     }
@@ -72,6 +74,18 @@ public struct VehicleData: Codable {
     
     enum CodingKeys: String, CodingKey {
         case vehicle = "veiculo"
+    }
+    
+}
+
+public struct CredorData: Codable {
+    
+    let personal: Personal?
+    let credor: Credor?
+    
+    init(personal: Personal, credor: Credor) {
+        self.personal = personal
+        self.credor   = credor
     }
     
 }

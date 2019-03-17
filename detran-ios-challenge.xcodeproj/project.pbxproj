@@ -35,7 +35,10 @@
 		534ADE0F223E94C600F88F27 /* CreateVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE0E223E94C600F88F27 /* CreateVehicleViewController.swift */; };
 		534ADE11223E94D400F88F27 /* CreateVehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE10223E94D400F88F27 /* CreateVehiclePresenter.swift */; };
 		534ADE13223E94E200F88F27 /* CreateVehicleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE12223E94E200F88F27 /* CreateVehicleContract.swift */; };
-		534ADE15223E95FD00F88F27 /* CreateVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE14223E95FD00F88F27 /* CreateVehicle.swift */; };
+		534ADE1E223EA30D00F88F27 /* CreateCredorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADE1D223EA30D00F88F27 /* CreateCredorViewController.xib */; };
+		534ADE20223EA32200F88F27 /* CreateCredorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */; };
+		534ADE24223EA35900F88F27 /* CreateCredorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */; };
+		534ADE26223EA37300F88F27 /* CreateCredorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE25223EA37300F88F27 /* CreateCredorContract.swift */; };
 		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
 		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
 		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
@@ -116,7 +119,10 @@
 		534ADE0E223E94C600F88F27 /* CreateVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleViewController.swift; sourceTree = "<group>"; };
 		534ADE10223E94D400F88F27 /* CreateVehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehiclePresenter.swift; sourceTree = "<group>"; };
 		534ADE12223E94E200F88F27 /* CreateVehicleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleContract.swift; sourceTree = "<group>"; };
-		534ADE14223E95FD00F88F27 /* CreateVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicle.swift; sourceTree = "<group>"; };
+		534ADE1D223EA30D00F88F27 /* CreateCredorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCredorViewController.xib; sourceTree = "<group>"; };
+		534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorViewController.swift; sourceTree = "<group>"; };
+		534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorPresenter.swift; sourceTree = "<group>"; };
+		534ADE25223EA37300F88F27 /* CreateCredorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorContract.swift; sourceTree = "<group>"; };
 		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
 		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
 		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
@@ -331,6 +337,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		534ADE1B223EA2D800F88F27 /* Credors */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE1C223EA2F500F88F27 /* View */,
+				534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */,
+				534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */,
+				534ADE25223EA37300F88F27 /* CreateCredorContract.swift */,
+			);
+			path = Credors;
+			sourceTree = "<group>";
+		};
+		534ADE1C223EA2F500F88F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE1D223EA30D00F88F27 /* CreateCredorViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		53530006223D82EF003AC039 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,7 +456,6 @@
 				534ADDCE223D90CA00F88F27 /* GetUserSession.swift */,
 				534ADDF1223DA6B400F88F27 /* GetContract.swift */,
 				534ADE01223E7F7E00F88F27 /* CreateContract.swift */,
-				534ADE14223E95FD00F88F27 /* CreateVehicle.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -443,6 +467,7 @@
 				5353003C223D8D03003AC039 /* Home */,
 				534ADDD0223D921900F88F27 /* Contracts */,
 				534ADE0A223E948400F88F27 /* Vehicles */,
+				534ADE1B223EA2D800F88F27 /* Credors */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -656,6 +681,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				534ADE05223E806F00F88F27 /* CreateContractViewController.xib in Resources */,
+				534ADE1E223EA30D00F88F27 /* CreateCredorViewController.xib in Resources */,
 				534ADDD5223D926400F88F27 /* ContractsListViewController.xib in Resources */,
 				5353003B223D863E003AC039 /* LoginViewController.xib in Resources */,
 				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
@@ -780,8 +806,8 @@
 				534ADE02223E7F7E00F88F27 /* CreateContract.swift in Sources */,
 				534ADDFC223E79F400F88F27 /* CreateContractPresenter.swift in Sources */,
 				534ADDCF223D90CA00F88F27 /* GetUserSession.swift in Sources */,
-				534ADE15223E95FD00F88F27 /* CreateVehicle.swift in Sources */,
 				5353000B223D834B003AC039 /* RequestUtils.swift in Sources */,
+				534ADE20223EA32200F88F27 /* CreateCredorViewController.swift in Sources */,
 				53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */,
 				534ADDE5223DA05B00F88F27 /* Debtor.swift in Sources */,
 				534ADDF7223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift in Sources */,
@@ -794,6 +820,7 @@
 				53530025223D850F003AC039 /* Optional.swift in Sources */,
 				53530045223D8F65003AC039 /* HomeContract.swift in Sources */,
 				53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */,
+				534ADE26223EA37300F88F27 /* CreateCredorContract.swift in Sources */,
 				5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */,
 				534ADDE1223D994200F88F27 /* Financing.swift in Sources */,
 				5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */,
@@ -813,6 +840,7 @@
 				5353003F223D8D21003AC039 /* HomeViewController.swift in Sources */,
 				534ADE13223E94E200F88F27 /* CreateVehicleContract.swift in Sources */,
 				53530032223D85BB003AC039 /* LoginViewController.swift in Sources */,
+				534ADE24223EA35900F88F27 /* CreateCredorPresenter.swift in Sources */,
 				53530015223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift in Sources */,
 				534ADDEE223DA4EB00F88F27 /* ContractsListCell.swift in Sources */,
 				53530047223D8FC3003AC039 /* DetroySession.swift in Sources */,
