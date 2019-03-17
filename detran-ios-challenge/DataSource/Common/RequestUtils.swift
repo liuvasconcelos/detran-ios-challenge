@@ -11,7 +11,6 @@ import Alamofire
 import SwiftKeychainWrapper
 import ObjectMapper
 import AlamofireObjectMapper
-import ObjectMapper
 
 struct RequestUtils {
     
@@ -65,7 +64,7 @@ struct RequestUtils {
         if let authenticationToken = token {
             request.setValue("Bearer \(authenticationToken)", forHTTPHeaderField: "Authorization")
         }
-        
+
         return request
     }
     

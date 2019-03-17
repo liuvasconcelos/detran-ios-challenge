@@ -16,7 +16,7 @@ public class AuthResponse: Codable, Mappable {
     
     init(financialUser: FinancialUser, token: String) {
         self.financialUser = financialUser
-        self.token      = token
+        self.token         = token
     }
     
     required public init?(map: Map) {
@@ -26,6 +26,13 @@ public class AuthResponse: Codable, Mappable {
     public func mapping(map: Map) {
         financialUser <- map["FinancialUser"]
         token         <- map["Token"]
+        financialUser <- map["financialUser"]
+        token         <- map["token"]
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case financialUser = "FinancialUser"
+        case token         = "Token"
     }
     
 }

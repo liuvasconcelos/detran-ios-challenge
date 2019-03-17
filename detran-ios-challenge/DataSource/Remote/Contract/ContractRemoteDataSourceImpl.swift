@@ -17,9 +17,9 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
         let path = "detran/public/contracts"
         var request = RequestUtils.getRequestWithObjectsSent(path: path, method: .get)
         
-        var code = RequestUtils.getCode()
+        let code = RequestUtils.getCode()
         
-        request.setValue(String(1001), forHTTPHeaderField: "code")
+        request.setValue(String(code), forHTTPHeaderField: "code")
 
         Alamofire.request(request).validate(statusCode: 200..<299).responseArray { (response: DataResponse<[Contract]>) in
             switch response.result {

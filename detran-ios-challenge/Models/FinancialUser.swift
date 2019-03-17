@@ -29,6 +29,9 @@ public class FinancialUser: Codable, Mappable {
         uuid           <- map["UUID"]
         financialsCode <- map["financials_code"]
         name           <- map["Name"]
+        uuid           <- map["uuid"]
+        financialsCode <- map["financialsCode"]
+        name           <- map["name"]
     }
     
 }

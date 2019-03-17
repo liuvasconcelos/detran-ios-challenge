@@ -10,6 +10,10 @@ import UIKit
 
 class  ContractsListCell: UITableViewCell {
     
+    @IBOutlet weak var contractNumberLabel: UILabel!
+    @IBOutlet weak var contractStatusImageView: UIImageView!
+    @IBOutlet weak var detranStatusImageView: UIImageView!
+    
     public static let NIB_NAME   = "ContractsListCell"
     public static let IDENTIFIER = "ContractsListCellIdentifier"
     
@@ -18,7 +22,19 @@ class  ContractsListCell: UITableViewCell {
     }
     
     func configureViewFor(contract: Contract) {
-
+        self.contractNumberLabel.text = "Número do contrato: \(contract.code!)"
+        
+        if contract.status ?? false {
+            self.contractStatusImageView.image = UIImage(named: "check")
+        } else {
+            self.contractStatusImageView.image = UIImage(named: "redcross")
+        }
+        
+        if contract.detranStatus ?? false {
+            self.detranStatusImageView.image = UIImage(named: "check")
+        } else {
+            self.detranStatusImageView.image = UIImage(named: "redcross")
+        }
     }
     
 }
