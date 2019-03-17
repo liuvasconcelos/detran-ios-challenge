@@ -7,13 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534ADDCF223D90CA00F88F27 /* GetUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDCE223D90CA00F88F27 /* GetUserSession.swift */; };
+		534ADDD3223D924000F88F27 /* ContractsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDD2223D924000F88F27 /* ContractsListViewController.swift */; };
+		534ADDD5223D926400F88F27 /* ContractsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADDD4223D926400F88F27 /* ContractsListViewController.xib */; };
+		534ADDD9223D92E400F88F27 /* ContractsListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDD8223D92E400F88F27 /* ContractsListTableView.swift */; };
+		534ADDDB223D93F700F88F27 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDDA223D93F700F88F27 /* Vehicle.swift */; };
+		534ADDDD223D969900F88F27 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDDC223D969900F88F27 /* Contract.swift */; };
+		534ADDDF223D98C900F88F27 /* Personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDDE223D98C900F88F27 /* Personal.swift */; };
+		534ADDE1223D994200F88F27 /* Financing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDE0223D994200F88F27 /* Financing.swift */; };
+		534ADDE3223D9A2300F88F27 /* InsideContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDE2223D9A2300F88F27 /* InsideContract.swift */; };
+		534ADDE5223DA05B00F88F27 /* Debtor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDE4223DA05B00F88F27 /* Debtor.swift */; };
+		534ADDE7223DA23800F88F27 /* Credor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDE6223DA23800F88F27 /* Credor.swift */; };
+		534ADDE9223DA49600F88F27 /* ContractsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDE8223DA49600F88F27 /* ContractsListPresenter.swift */; };
+		534ADDEB223DA4A200F88F27 /* ContractsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDEA223DA4A200F88F27 /* ContractsListContract.swift */; };
+		534ADDEE223DA4EB00F88F27 /* ContractsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDED223DA4EB00F88F27 /* ContractsListCell.swift */; };
+		534ADDF0223DA52E00F88F27 /* ContractsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADDEF223DA52E00F88F27 /* ContractsListCell.xib */; };
+		534ADDF2223DA6B400F88F27 /* GetContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF1223DA6B400F88F27 /* GetContract.swift */; };
+		534ADDF5223DA82C00F88F27 /* ContractRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF4223DA82C00F88F27 /* ContractRemoteDataSource.swift */; };
+		534ADDF7223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF6223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift */; };
+		534ADDFA223E79BE00F88F27 /* CreateContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */; };
+		534ADDFC223E79F400F88F27 /* CreateContractPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */; };
+		534ADDFE223E7A0F00F88F27 /* CreateContractContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDFD223E7A0F00F88F27 /* CreateContractContract.swift */; };
+		534ADE00223E7C4F00F88F27 /* ContractRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDFF223E7C4F00F88F27 /* ContractRequest.swift */; };
+		534ADE02223E7F7E00F88F27 /* CreateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE01223E7F7E00F88F27 /* CreateContract.swift */; };
+		534ADE05223E806F00F88F27 /* CreateContractViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADE04223E806F00F88F27 /* CreateContractViewController.xib */; };
+		534ADE0D223E94B600F88F27 /* CreateVehicleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADE0C223E94B600F88F27 /* CreateVehicleViewController.xib */; };
+		534ADE0F223E94C600F88F27 /* CreateVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE0E223E94C600F88F27 /* CreateVehicleViewController.swift */; };
+		534ADE11223E94D400F88F27 /* CreateVehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE10223E94D400F88F27 /* CreateVehiclePresenter.swift */; };
+		534ADE13223E94E200F88F27 /* CreateVehicleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE12223E94E200F88F27 /* CreateVehicleContract.swift */; };
+		534ADE1E223EA30D00F88F27 /* CreateCredorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADE1D223EA30D00F88F27 /* CreateCredorViewController.xib */; };
+		534ADE20223EA32200F88F27 /* CreateCredorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */; };
+		534ADE24223EA35900F88F27 /* CreateCredorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */; };
+		534ADE26223EA37300F88F27 /* CreateCredorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE25223EA37300F88F27 /* CreateCredorContract.swift */; };
+		534ADE2D223EA9CD00F88F27 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE2C223EA9CD00F88F27 /* Login.swift */; };
+		534ADE2F223EAA1700F88F27 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE2E223EAA1700F88F27 /* Home.swift */; };
+		534ADE31223EAA3F00F88F27 /* ContractsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE30223EAA3F00F88F27 /* ContractsList.swift */; };
+		534ADE33223EAA5200F88F27 /* CreateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE32223EAA5200F88F27 /* CreateContract.swift */; };
+		534ADE35223EAA7200F88F27 /* CreateVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE34223EAA7200F88F27 /* CreateVehicle.swift */; };
+		534ADE37223EAA8600F88F27 /* CreateCredor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE36223EAA8600F88F27 /* CreateCredor.swift */; };
+		534ADE39223EAAB900F88F27 /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE38223EAAB900F88F27 /* LoginViewControllerUITests.swift */; };
+		534ADE3B223EAB0E00F88F27 /* HomeViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3A223EAB0E00F88F27 /* HomeViewControllerUITests.swift */; };
+		534ADE3D223EAB5100F88F27 /* ContractsListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3C223EAB5100F88F27 /* ContractsListViewControllerUITests.swift */; };
+		534ADE3F223EAB7300F88F27 /* CreateContractViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */; };
+		534ADE41223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */; };
+		534ADE43223EABB800F88F27 /* CreateCredorViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */; };
+		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
+		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
+		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
+		53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530012223D83DA003AC039 /* AuthenticationRemoteDataSource.swift */; };
+		53530015223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530014223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift */; };
+		53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530018223D8437003AC039 /* SessionLocalDataSource.swift */; };
+		5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353001A223D8456003AC039 /* SessionLocalDataSourceImpl.swift */; };
+		5353001D223D8494003AC039 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353001C223D8494003AC039 /* AuthRequest.swift */; };
+		5353001F223D84B8003AC039 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353001E223D84B8003AC039 /* AuthResponse.swift */; };
+		53530021223D84DC003AC039 /* FinancialUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530020223D84DC003AC039 /* FinancialUser.swift */; };
+		53530025223D850F003AC039 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530024223D850F003AC039 /* Optional.swift */; };
+		53530027223D8526003AC039 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530026223D8526003AC039 /* UIViewController.swift */; };
+		5353002A223D8551003AC039 /* GetAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530029223D8551003AC039 /* GetAuth.swift */; };
+		5353002C223D856F003AC039 /* SaveSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353002B223D856F003AC039 /* SaveSession.swift */; };
+		53530032223D85BB003AC039 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530031223D85BB003AC039 /* LoginViewController.swift */; };
+		53530034223D85D6003AC039 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530033223D85D6003AC039 /* LoginPresenter.swift */; };
+		53530037223D85F7003AC039 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530036223D85F7003AC039 /* LoginContract.swift */; };
+		53530039223D8617003AC039 /* LoginViewControllerValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */; };
+		5353003B223D863E003AC039 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5353003A223D863E003AC039 /* LoginViewController.xib */; };
+		5353003F223D8D21003AC039 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353003E223D8D21003AC039 /* HomeViewController.swift */; };
+		53530041223D8D5B003AC039 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53530040223D8D5B003AC039 /* HomeViewController.xib */; };
+		53530043223D8F5A003AC039 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530042223D8F5A003AC039 /* HomePresenter.swift */; };
+		53530045223D8F65003AC039 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530044223D8F65003AC039 /* HomeContract.swift */; };
+		53530047223D8FC3003AC039 /* DetroySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530046223D8FC3003AC039 /* DetroySession.swift */; };
 		5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFD8223D7D54003AC039 /* AppDelegate.swift */; };
-		5353FFDB223D7D54003AC039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFDA223D7D54003AC039 /* ViewController.swift */; };
-		5353FFDE223D7D54003AC039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDC223D7D54003AC039 /* Main.storyboard */; };
 		5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDF223D7D55003AC039 /* Assets.xcassets */; };
-		5353FFE3223D7D55003AC039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */; };
-		5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */; };
-		5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */; };
 		71C24A3E4833D30229476235 /* Pods_detran_ios_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1775F2CE5123780F75B25A /* Pods_detran_ios_challengeTests.framework */; };
 		90E1FBEE29D2FB4CEBBDB00A /* Pods_detran_ios_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8501CED462B10C4C00F81306 /* Pods_detran_ios_challengeUITests.framework */; };
 		934306A5264BD555724A08F3 /* Pods_detran_ios_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1DBFD2F276D727E8B6957F /* Pods_detran_ios_challenge.framework */; };
@@ -38,18 +101,80 @@
 
 /* Begin PBXFileReference section */
 		4A6DF830429A1E150F271380 /* Pods-detran-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detran-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-detran-ios-challengeTests/Pods-detran-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		534ADDCE223D90CA00F88F27 /* GetUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserSession.swift; sourceTree = "<group>"; };
+		534ADDD2223D924000F88F27 /* ContractsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListViewController.swift; sourceTree = "<group>"; };
+		534ADDD4223D926400F88F27 /* ContractsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractsListViewController.xib; sourceTree = "<group>"; };
+		534ADDD8223D92E400F88F27 /* ContractsListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListTableView.swift; sourceTree = "<group>"; };
+		534ADDDA223D93F700F88F27 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		534ADDDC223D969900F88F27 /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		534ADDDE223D98C900F88F27 /* Personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal.swift; sourceTree = "<group>"; };
+		534ADDE0223D994200F88F27 /* Financing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Financing.swift; sourceTree = "<group>"; };
+		534ADDE2223D9A2300F88F27 /* InsideContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideContract.swift; sourceTree = "<group>"; };
+		534ADDE4223DA05B00F88F27 /* Debtor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debtor.swift; sourceTree = "<group>"; };
+		534ADDE6223DA23800F88F27 /* Credor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credor.swift; sourceTree = "<group>"; };
+		534ADDE8223DA49600F88F27 /* ContractsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListPresenter.swift; sourceTree = "<group>"; };
+		534ADDEA223DA4A200F88F27 /* ContractsListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListContract.swift; sourceTree = "<group>"; };
+		534ADDED223DA4EB00F88F27 /* ContractsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListCell.swift; sourceTree = "<group>"; };
+		534ADDEF223DA52E00F88F27 /* ContractsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractsListCell.xib; sourceTree = "<group>"; };
+		534ADDF1223DA6B400F88F27 /* GetContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContract.swift; sourceTree = "<group>"; };
+		534ADDF4223DA82C00F88F27 /* ContractRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDataSource.swift; sourceTree = "<group>"; };
+		534ADDF6223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewController.swift; sourceTree = "<group>"; };
+		534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractPresenter.swift; sourceTree = "<group>"; };
+		534ADDFD223E7A0F00F88F27 /* CreateContractContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractContract.swift; sourceTree = "<group>"; };
+		534ADDFF223E7C4F00F88F27 /* ContractRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRequest.swift; sourceTree = "<group>"; };
+		534ADE01223E7F7E00F88F27 /* CreateContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContract.swift; sourceTree = "<group>"; };
+		534ADE04223E806F00F88F27 /* CreateContractViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateContractViewController.xib; sourceTree = "<group>"; };
+		534ADE0C223E94B600F88F27 /* CreateVehicleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateVehicleViewController.xib; sourceTree = "<group>"; };
+		534ADE0E223E94C600F88F27 /* CreateVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleViewController.swift; sourceTree = "<group>"; };
+		534ADE10223E94D400F88F27 /* CreateVehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehiclePresenter.swift; sourceTree = "<group>"; };
+		534ADE12223E94E200F88F27 /* CreateVehicleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleContract.swift; sourceTree = "<group>"; };
+		534ADE1D223EA30D00F88F27 /* CreateCredorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCredorViewController.xib; sourceTree = "<group>"; };
+		534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorViewController.swift; sourceTree = "<group>"; };
+		534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorPresenter.swift; sourceTree = "<group>"; };
+		534ADE25223EA37300F88F27 /* CreateCredorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorContract.swift; sourceTree = "<group>"; };
+		534ADE2C223EA9CD00F88F27 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		534ADE2E223EAA1700F88F27 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		534ADE30223EAA3F00F88F27 /* ContractsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsList.swift; sourceTree = "<group>"; };
+		534ADE32223EAA5200F88F27 /* CreateContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContract.swift; sourceTree = "<group>"; };
+		534ADE34223EAA7200F88F27 /* CreateVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicle.swift; sourceTree = "<group>"; };
+		534ADE36223EAA8600F88F27 /* CreateCredor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredor.swift; sourceTree = "<group>"; };
+		534ADE38223EAAB900F88F27 /* LoginViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE3A223EAB0E00F88F27 /* HomeViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE3C223EAB5100F88F27 /* ContractsListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorViewControllerUITests.swift; sourceTree = "<group>"; };
+		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
+		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
+		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
+		53530012223D83DA003AC039 /* AuthenticationRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteDataSource.swift; sourceTree = "<group>"; };
+		53530014223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		53530018223D8437003AC039 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
+		5353001A223D8456003AC039 /* SessionLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		5353001C223D8494003AC039 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		5353001E223D84B8003AC039 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		53530020223D84DC003AC039 /* FinancialUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialUser.swift; sourceTree = "<group>"; };
+		53530024223D850F003AC039 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		53530026223D8526003AC039 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		53530029223D8551003AC039 /* GetAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAuth.swift; sourceTree = "<group>"; };
+		5353002B223D856F003AC039 /* SaveSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSession.swift; sourceTree = "<group>"; };
+		53530031223D85BB003AC039 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		53530033223D85D6003AC039 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		53530036223D85F7003AC039 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerValidationExtension.swift; sourceTree = "<group>"; };
+		5353003A223D863E003AC039 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5353003E223D8D21003AC039 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53530040223D8D5B003AC039 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		53530042223D8F5A003AC039 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		53530044223D8F65003AC039 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		53530046223D8FC3003AC039 /* DetroySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroySession.swift; sourceTree = "<group>"; };
 		5353FFD5223D7D54003AC039 /* detran-ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detran-ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353FFD8223D7D54003AC039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5353FFDA223D7D54003AC039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5353FFDD223D7D54003AC039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5353FFDF223D7D55003AC039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5353FFE2223D7D55003AC039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5353FFE4223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5353FFE9223D7D55003AC039 /* detran-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeTests.swift; sourceTree = "<group>"; };
-		5353FFEF223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5353FFF4223D7D55003AC039 /* detran-ios-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeUITests.swift; sourceTree = "<group>"; };
 		5353FFFA223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8501CED462B10C4C00F81306 /* Pods_detran_ios_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detran_ios_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1DBFD2F276D727E8B6957F /* Pods_detran_ios_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detran_ios_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,11 +237,337 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		534ADDD0223D921900F88F27 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				534ADDD1223D922E00F88F27 /* ContractsList */,
+				534ADDF8223E798C00F88F27 /* CreateContract */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		534ADDD1223D922E00F88F27 /* ContractsList */ = {
+			isa = PBXGroup;
+			children = (
+				534ADDD6223D926D00F88F27 /* View */,
+				534ADDD2223D924000F88F27 /* ContractsListViewController.swift */,
+				534ADDE8223DA49600F88F27 /* ContractsListPresenter.swift */,
+				534ADDEA223DA4A200F88F27 /* ContractsListContract.swift */,
+			);
+			path = ContractsList;
+			sourceTree = "<group>";
+		};
+		534ADDD6223D926D00F88F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				534ADDD7223D92CE00F88F27 /* TableView */,
+				534ADDD4223D926400F88F27 /* ContractsListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		534ADDD7223D92CE00F88F27 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				534ADDEC223DA4D700F88F27 /* Cell */,
+				534ADDD8223D92E400F88F27 /* ContractsListTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		534ADDEC223DA4D700F88F27 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				534ADDED223DA4EB00F88F27 /* ContractsListCell.swift */,
+				534ADDEF223DA52E00F88F27 /* ContractsListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		534ADDF3223DA81B00F88F27 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				534ADDF4223DA82C00F88F27 /* ContractRemoteDataSource.swift */,
+				534ADDF6223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		534ADDF8223E798C00F88F27 /* CreateContract */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE03223E805700F88F27 /* View */,
+				534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */,
+				534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */,
+				534ADDFD223E7A0F00F88F27 /* CreateContractContract.swift */,
+			);
+			path = CreateContract;
+			sourceTree = "<group>";
+		};
+		534ADE03223E805700F88F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE04223E806F00F88F27 /* CreateContractViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		534ADE06223E927600F88F27 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5353001C223D8494003AC039 /* AuthRequest.swift */,
+				534ADDFF223E7C4F00F88F27 /* ContractRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		534ADE07223E928A00F88F27 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				5353001E223D84B8003AC039 /* AuthResponse.swift */,
+				53530020223D84DC003AC039 /* FinancialUser.swift */,
+				534ADDDC223D969900F88F27 /* Contract.swift */,
+				534ADDDA223D93F700F88F27 /* Vehicle.swift */,
+				534ADDDE223D98C900F88F27 /* Personal.swift */,
+				534ADDE0223D994200F88F27 /* Financing.swift */,
+				534ADDE2223D9A2300F88F27 /* InsideContract.swift */,
+				534ADDE4223DA05B00F88F27 /* Debtor.swift */,
+				534ADDE6223DA23800F88F27 /* Credor.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		534ADE0A223E948400F88F27 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE0B223E94A100F88F27 /* View */,
+				534ADE0E223E94C600F88F27 /* CreateVehicleViewController.swift */,
+				534ADE10223E94D400F88F27 /* CreateVehiclePresenter.swift */,
+				534ADE12223E94E200F88F27 /* CreateVehicleContract.swift */,
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		534ADE0B223E94A100F88F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE0C223E94B600F88F27 /* CreateVehicleViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		534ADE1B223EA2D800F88F27 /* Credors */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE1C223EA2F500F88F27 /* View */,
+				534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */,
+				534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */,
+				534ADE25223EA37300F88F27 /* CreateCredorContract.swift */,
+			);
+			path = Credors;
+			sourceTree = "<group>";
+		};
+		534ADE1C223EA2F500F88F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE1D223EA30D00F88F27 /* CreateCredorViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		534ADE29223EA9A200F88F27 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE2C223EA9CD00F88F27 /* Login.swift */,
+				534ADE2E223EAA1700F88F27 /* Home.swift */,
+				534ADE30223EAA3F00F88F27 /* ContractsList.swift */,
+				534ADE32223EAA5200F88F27 /* CreateContract.swift */,
+				534ADE34223EAA7200F88F27 /* CreateVehicle.swift */,
+				534ADE36223EAA8600F88F27 /* CreateCredor.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		534ADE2A223EA9A900F88F27 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE38223EAAB900F88F27 /* LoginViewControllerUITests.swift */,
+				534ADE3A223EAB0E00F88F27 /* HomeViewControllerUITests.swift */,
+				534ADE3C223EAB5100F88F27 /* ContractsListViewControllerUITests.swift */,
+				534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */,
+				534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */,
+				534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		53530006223D82EF003AC039 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				53530016223D8419003AC039 /* Local */,
+				53530010223D83B2003AC039 /* Remote */,
+				53530009223D8316003AC039 /* Common */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		53530007223D82F9003AC039 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE07223E928A00F88F27 /* Responses */,
+				534ADE06223E927600F88F27 /* Requests */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53530008223D8300003AC039 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5353002D223D858C003AC039 /* Modules */,
+				53530028223D853D003AC039 /* Usecases */,
+				53530022223D84F9003AC039 /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		53530009223D8316003AC039 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5353000A223D834B003AC039 /* RequestUtils.swift */,
+				5353000C223D8355003AC039 /* CallbackEnum.swift */,
+				5353000E223D8369003AC039 /* BaseCallback.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		53530010223D83B2003AC039 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				53530011223D83C1003AC039 /* Authentication */,
+				534ADDF3223DA81B00F88F27 /* Contract */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		53530011223D83C1003AC039 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				53530012223D83DA003AC039 /* AuthenticationRemoteDataSource.swift */,
+				53530014223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		53530016223D8419003AC039 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				53530017223D842E003AC039 /* Session */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		53530017223D842E003AC039 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				53530018223D8437003AC039 /* SessionLocalDataSource.swift */,
+				5353001A223D8456003AC039 /* SessionLocalDataSourceImpl.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		53530022223D84F9003AC039 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				53530023223D8502003AC039 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		53530023223D8502003AC039 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53530024223D850F003AC039 /* Optional.swift */,
+				53530026223D8526003AC039 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		53530028223D853D003AC039 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				53530029223D8551003AC039 /* GetAuth.swift */,
+				5353002B223D856F003AC039 /* SaveSession.swift */,
+				53530046223D8FC3003AC039 /* DetroySession.swift */,
+				534ADDCE223D90CA00F88F27 /* GetUserSession.swift */,
+				534ADDF1223DA6B400F88F27 /* GetContract.swift */,
+				534ADE01223E7F7E00F88F27 /* CreateContract.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		5353002D223D858C003AC039 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5353002E223D8591003AC039 /* Login */,
+				5353003C223D8D03003AC039 /* Home */,
+				534ADDD0223D921900F88F27 /* Contracts */,
+				534ADE0A223E948400F88F27 /* Vehicles */,
+				534ADE1B223EA2D800F88F27 /* Credors */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5353002E223D8591003AC039 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53530030223D85AA003AC039 /* Extensions */,
+				5353002F223D85A1003AC039 /* View */,
+				53530031223D85BB003AC039 /* LoginViewController.swift */,
+				53530033223D85D6003AC039 /* LoginPresenter.swift */,
+				53530036223D85F7003AC039 /* LoginContract.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5353002F223D85A1003AC039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5353003A223D863E003AC039 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53530030223D85AA003AC039 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5353003C223D8D03003AC039 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5353003D223D8D0F003AC039 /* View */,
+				5353003E223D8D21003AC039 /* HomeViewController.swift */,
+				53530042223D8F5A003AC039 /* HomePresenter.swift */,
+				53530044223D8F65003AC039 /* HomeContract.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5353003D223D8D0F003AC039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53530040223D8D5B003AC039 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5353FFCC223D7D54003AC039 = {
 			isa = PBXGroup;
 			children = (
 				5353FFD7223D7D54003AC039 /* detran-ios-challenge */,
-				5353FFEC223D7D55003AC039 /* detran-ios-challengeTests */,
 				5353FFF7223D7D55003AC039 /* detran-ios-challengeUITests */,
 				5353FFD6223D7D54003AC039 /* Products */,
 				4B4EE398737E4C6447C120E7 /* Pods */,
@@ -137,29 +588,21 @@
 		5353FFD7223D7D54003AC039 /* detran-ios-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				53530008223D8300003AC039 /* Application */,
+				53530007223D82F9003AC039 /* Models */,
+				53530006223D82EF003AC039 /* DataSource */,
 				5353FFD8223D7D54003AC039 /* AppDelegate.swift */,
-				5353FFDA223D7D54003AC039 /* ViewController.swift */,
-				5353FFDC223D7D54003AC039 /* Main.storyboard */,
 				5353FFDF223D7D55003AC039 /* Assets.xcassets */,
-				5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */,
 				5353FFE4223D7D55003AC039 /* Info.plist */,
 			);
 			path = "detran-ios-challenge";
 			sourceTree = "<group>";
 		};
-		5353FFEC223D7D55003AC039 /* detran-ios-challengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */,
-				5353FFEF223D7D55003AC039 /* Info.plist */,
-			);
-			path = "detran-ios-challengeTests";
-			sourceTree = "<group>";
-		};
 		5353FFF7223D7D55003AC039 /* detran-ios-challengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */,
+				534ADE29223EA9A200F88F27 /* Pages */,
+				534ADE2A223EA9A900F88F27 /* UITests */,
 				5353FFFA223D7D55003AC039 /* Info.plist */,
 			);
 			path = "detran-ios-challengeUITests";
@@ -244,6 +687,7 @@
 					};
 					5353FFF3223D7D55003AC039 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 5353FFD4223D7D54003AC039;
 					};
 				};
@@ -273,9 +717,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFE3223D7D55003AC039 /* LaunchScreen.storyboard in Resources */,
+				534ADE05223E806F00F88F27 /* CreateContractViewController.xib in Resources */,
+				534ADE1E223EA30D00F88F27 /* CreateCredorViewController.xib in Resources */,
+				534ADDD5223D926400F88F27 /* ContractsListViewController.xib in Resources */,
+				5353003B223D863E003AC039 /* LoginViewController.xib in Resources */,
 				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
-				5353FFDE223D7D54003AC039 /* Main.storyboard in Resources */,
+				534ADDF0223DA52E00F88F27 /* ContractsListCell.xib in Resources */,
+				534ADE0D223E94B600F88F27 /* CreateVehicleViewController.xib in Resources */,
+				53530041223D8D5B003AC039 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +834,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFDB223D7D54003AC039 /* ViewController.swift in Sources */,
+				534ADE11223E94D400F88F27 /* CreateVehiclePresenter.swift in Sources */,
+				534ADDDB223D93F700F88F27 /* Vehicle.swift in Sources */,
+				53530043223D8F5A003AC039 /* HomePresenter.swift in Sources */,
+				534ADDD9223D92E400F88F27 /* ContractsListTableView.swift in Sources */,
+				53530027223D8526003AC039 /* UIViewController.swift in Sources */,
+				534ADDE9223DA49600F88F27 /* ContractsListPresenter.swift in Sources */,
+				534ADE02223E7F7E00F88F27 /* CreateContract.swift in Sources */,
+				534ADDFC223E79F400F88F27 /* CreateContractPresenter.swift in Sources */,
+				534ADDCF223D90CA00F88F27 /* GetUserSession.swift in Sources */,
+				5353000B223D834B003AC039 /* RequestUtils.swift in Sources */,
+				534ADE20223EA32200F88F27 /* CreateCredorViewController.swift in Sources */,
+				53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */,
+				534ADDE5223DA05B00F88F27 /* Debtor.swift in Sources */,
+				534ADDF7223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift in Sources */,
+				534ADDD3223D924000F88F27 /* ContractsListViewController.swift in Sources */,
+				534ADDF5223DA82C00F88F27 /* ContractRemoteDataSource.swift in Sources */,
+				534ADE00223E7C4F00F88F27 /* ContractRequest.swift in Sources */,
+				53530021223D84DC003AC039 /* FinancialUser.swift in Sources */,
+				534ADDF2223DA6B400F88F27 /* GetContract.swift in Sources */,
+				534ADDFA223E79BE00F88F27 /* CreateContractViewController.swift in Sources */,
+				53530025223D850F003AC039 /* Optional.swift in Sources */,
+				53530045223D8F65003AC039 /* HomeContract.swift in Sources */,
+				53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */,
+				534ADE26223EA37300F88F27 /* CreateCredorContract.swift in Sources */,
 				5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */,
+				534ADDE1223D994200F88F27 /* Financing.swift in Sources */,
+				5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */,
+				5353000F223D8369003AC039 /* BaseCallback.swift in Sources */,
+				534ADDFE223E7A0F00F88F27 /* CreateContractContract.swift in Sources */,
+				53530037223D85F7003AC039 /* LoginContract.swift in Sources */,
+				5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */,
+				534ADE0F223E94C600F88F27 /* CreateVehicleViewController.swift in Sources */,
+				5353002A223D8551003AC039 /* GetAuth.swift in Sources */,
+				53530034223D85D6003AC039 /* LoginPresenter.swift in Sources */,
+				534ADDE3223D9A2300F88F27 /* InsideContract.swift in Sources */,
+				534ADDE7223DA23800F88F27 /* Credor.swift in Sources */,
+				534ADDEB223DA4A200F88F27 /* ContractsListContract.swift in Sources */,
+				534ADDDD223D969900F88F27 /* Contract.swift in Sources */,
+				5353001F223D84B8003AC039 /* AuthResponse.swift in Sources */,
+				53530039223D8617003AC039 /* LoginViewControllerValidationExtension.swift in Sources */,
+				5353003F223D8D21003AC039 /* HomeViewController.swift in Sources */,
+				534ADE13223E94E200F88F27 /* CreateVehicleContract.swift in Sources */,
+				53530032223D85BB003AC039 /* LoginViewController.swift in Sources */,
+				534ADE24223EA35900F88F27 /* CreateCredorPresenter.swift in Sources */,
+				53530015223D83F2003AC039 /* AuthenticationRemoteDataSourceImpl.swift in Sources */,
+				534ADDEE223DA4EB00F88F27 /* ContractsListCell.swift in Sources */,
+				53530047223D8FC3003AC039 /* DetroySession.swift in Sources */,
+				5353001D223D8494003AC039 /* AuthRequest.swift in Sources */,
+				5353002C223D856F003AC039 /* SaveSession.swift in Sources */,
+				534ADDDF223D98C900F88F27 /* Personal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +891,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +898,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */,
+				534ADE3F223EAB7300F88F27 /* CreateContractViewControllerUITests.swift in Sources */,
+				534ADE43223EABB800F88F27 /* CreateCredorViewControllerUITests.swift in Sources */,
+				534ADE41223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift in Sources */,
+				534ADE35223EAA7200F88F27 /* CreateVehicle.swift in Sources */,
+				534ADE2F223EAA1700F88F27 /* Home.swift in Sources */,
+				534ADE31223EAA3F00F88F27 /* ContractsList.swift in Sources */,
+				534ADE3B223EAB0E00F88F27 /* HomeViewControllerUITests.swift in Sources */,
+				534ADE2D223EA9CD00F88F27 /* Login.swift in Sources */,
+				534ADE37223EAA8600F88F27 /* CreateCredor.swift in Sources */,
+				534ADE39223EAAB900F88F27 /* LoginViewControllerUITests.swift in Sources */,
+				534ADE33223EAA5200F88F27 /* CreateContract.swift in Sources */,
+				534ADE3D223EAB5100F88F27 /* ContractsListViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,25 +927,6 @@
 			targetProxy = 5353FFF5223D7D55003AC039 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5353FFDC223D7D54003AC039 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5353FFDD223D7D54003AC039 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5353FFE1223D7D55003AC039 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5353FFE2223D7D55003AC039 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53530001223D7D55003AC039 /* Debug */ = {
@@ -490,6 +978,7 @@
 			baseConfigurationReference = 8E6DB4EB2DD4FA11832879FD /* Pods-detran-ios-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9CMSL6QFV;
 				INFOPLIST_FILE = "detran-ios-challengeUITests/Info.plist";
@@ -500,6 +989,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "detran-ios-challengeUITests/Pages/detran-ios-challengeUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "detran-ios-challenge";
@@ -511,6 +1002,7 @@
 			baseConfigurationReference = EDDA01D474C9C878F94B8164 /* Pods-detran-ios-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9CMSL6QFV;
 				INFOPLIST_FILE = "detran-ios-challengeUITests/Info.plist";
@@ -521,6 +1013,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "detran-ios-challengeUITests/Pages/detran-ios-challengeUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "detran-ios-challenge";
