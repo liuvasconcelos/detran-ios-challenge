@@ -39,6 +39,11 @@ class HomeViewController: UIViewController, HomeViewContract {
     }
     
     @IBAction func goToAddContractScreen(_ sender: Any) {
+        let createContractViewController = CreateContractViewController.fromNib().or(CreateContractViewController())
+        
+        self.navigationController?.isNavigationBarHidden = false
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(createContractViewController, animated: true)
     }
     
     @IBAction func goToAddVehicleScreen(_ sender: Any) {

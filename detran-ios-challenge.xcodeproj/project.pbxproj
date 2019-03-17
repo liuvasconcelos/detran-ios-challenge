@@ -25,6 +25,12 @@
 		534ADDF2223DA6B400F88F27 /* GetContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF1223DA6B400F88F27 /* GetContract.swift */; };
 		534ADDF5223DA82C00F88F27 /* ContractRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF4223DA82C00F88F27 /* ContractRemoteDataSource.swift */; };
 		534ADDF7223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF6223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift */; };
+		534ADDFA223E79BE00F88F27 /* CreateContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */; };
+		534ADDFC223E79F400F88F27 /* CreateContractPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */; };
+		534ADDFE223E7A0F00F88F27 /* CreateContractContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDFD223E7A0F00F88F27 /* CreateContractContract.swift */; };
+		534ADE00223E7C4F00F88F27 /* ContractRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADDFF223E7C4F00F88F27 /* ContractRequest.swift */; };
+		534ADE02223E7F7E00F88F27 /* CreateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE01223E7F7E00F88F27 /* CreateContract.swift */; };
+		534ADE05223E806F00F88F27 /* CreateContractViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534ADE04223E806F00F88F27 /* CreateContractViewController.xib */; };
 		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
 		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
 		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
@@ -95,6 +101,12 @@
 		534ADDF1223DA6B400F88F27 /* GetContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContract.swift; sourceTree = "<group>"; };
 		534ADDF4223DA82C00F88F27 /* ContractRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDataSource.swift; sourceTree = "<group>"; };
 		534ADDF6223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewController.swift; sourceTree = "<group>"; };
+		534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractPresenter.swift; sourceTree = "<group>"; };
+		534ADDFD223E7A0F00F88F27 /* CreateContractContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractContract.swift; sourceTree = "<group>"; };
+		534ADDFF223E7C4F00F88F27 /* ContractRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRequest.swift; sourceTree = "<group>"; };
+		534ADE01223E7F7E00F88F27 /* CreateContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContract.swift; sourceTree = "<group>"; };
+		534ADE04223E806F00F88F27 /* CreateContractViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateContractViewController.xib; sourceTree = "<group>"; };
 		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
 		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
 		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
@@ -193,12 +205,13 @@
 		534ADDD0223D921900F88F27 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
-				534ADDD1223D922E00F88F27 /* List */,
+				534ADDD1223D922E00F88F27 /* ContractsList */,
+				534ADDF8223E798C00F88F27 /* CreateContract */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
 		};
-		534ADDD1223D922E00F88F27 /* List */ = {
+		534ADDD1223D922E00F88F27 /* ContractsList */ = {
 			isa = PBXGroup;
 			children = (
 				534ADDD6223D926D00F88F27 /* View */,
@@ -206,7 +219,7 @@
 				534ADDE8223DA49600F88F27 /* ContractsListPresenter.swift */,
 				534ADDEA223DA4A200F88F27 /* ContractsListContract.swift */,
 			);
-			path = List;
+			path = ContractsList;
 			sourceTree = "<group>";
 		};
 		534ADDD6223D926D00F88F27 /* View */ = {
@@ -245,6 +258,25 @@
 			path = Contract;
 			sourceTree = "<group>";
 		};
+		534ADDF8223E798C00F88F27 /* CreateContract */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE03223E805700F88F27 /* View */,
+				534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */,
+				534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */,
+				534ADDFD223E7A0F00F88F27 /* CreateContractContract.swift */,
+			);
+			path = CreateContract;
+			sourceTree = "<group>";
+		};
+		534ADE03223E805700F88F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE04223E806F00F88F27 /* CreateContractViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		53530006223D82EF003AC039 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +300,7 @@
 				534ADDE2223D9A2300F88F27 /* InsideContract.swift */,
 				534ADDE4223DA05B00F88F27 /* Debtor.swift */,
 				534ADDE6223DA23800F88F27 /* Credor.swift */,
+				534ADDFF223E7C4F00F88F27 /* ContractRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +385,7 @@
 				53530046223D8FC3003AC039 /* DetroySession.swift */,
 				534ADDCE223D90CA00F88F27 /* GetUserSession.swift */,
 				534ADDF1223DA6B400F88F27 /* GetContract.swift */,
+				534ADE01223E7F7E00F88F27 /* CreateContract.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -574,6 +608,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534ADE05223E806F00F88F27 /* CreateContractViewController.xib in Resources */,
 				534ADDD5223D926400F88F27 /* ContractsListViewController.xib in Resources */,
 				5353003B223D863E003AC039 /* LoginViewController.xib in Resources */,
 				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
@@ -693,6 +728,8 @@
 				534ADDD9223D92E400F88F27 /* ContractsListTableView.swift in Sources */,
 				53530027223D8526003AC039 /* UIViewController.swift in Sources */,
 				534ADDE9223DA49600F88F27 /* ContractsListPresenter.swift in Sources */,
+				534ADE02223E7F7E00F88F27 /* CreateContract.swift in Sources */,
+				534ADDFC223E79F400F88F27 /* CreateContractPresenter.swift in Sources */,
 				534ADDCF223D90CA00F88F27 /* GetUserSession.swift in Sources */,
 				5353000B223D834B003AC039 /* RequestUtils.swift in Sources */,
 				53530019223D8437003AC039 /* SessionLocalDataSource.swift in Sources */,
@@ -700,8 +737,10 @@
 				534ADDF7223DA85A00F88F27 /* ContractRemoteDataSourceImpl.swift in Sources */,
 				534ADDD3223D924000F88F27 /* ContractsListViewController.swift in Sources */,
 				534ADDF5223DA82C00F88F27 /* ContractRemoteDataSource.swift in Sources */,
+				534ADE00223E7C4F00F88F27 /* ContractRequest.swift in Sources */,
 				53530021223D84DC003AC039 /* FinancialUser.swift in Sources */,
 				534ADDF2223DA6B400F88F27 /* GetContract.swift in Sources */,
+				534ADDFA223E79BE00F88F27 /* CreateContractViewController.swift in Sources */,
 				53530025223D850F003AC039 /* Optional.swift in Sources */,
 				53530045223D8F65003AC039 /* HomeContract.swift in Sources */,
 				53530013223D83DA003AC039 /* AuthenticationRemoteDataSource.swift in Sources */,
@@ -709,6 +748,7 @@
 				534ADDE1223D994200F88F27 /* Financing.swift in Sources */,
 				5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */,
 				5353000F223D8369003AC039 /* BaseCallback.swift in Sources */,
+				534ADDFE223E7A0F00F88F27 /* CreateContractContract.swift in Sources */,
 				53530037223D85F7003AC039 /* LoginContract.swift in Sources */,
 				5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */,
 				5353002A223D8551003AC039 /* GetAuth.swift in Sources */,

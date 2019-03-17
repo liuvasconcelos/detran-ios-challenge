@@ -15,7 +15,7 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
     
     public func loadContracts(_ callback: @escaping (BaseCallback<[Contract]>) -> Void) {
         let path = "detran/public/contracts"
-        var request = RequestUtils.getRequestWithObjectsSent(path: path, method: .get)
+        var request = RequestUtils.getRequest(object: "", path: path, method: .get)
         
         let code = RequestUtils.getCode()
         
@@ -31,6 +31,25 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
                 
             case .failure(let error):
                 let callbackFailed = BaseCallback<[Contract]>.failed(error: error.localizedDescription)
+                callback(callbackFailed)
+            }
+        }
+    }
+    
+    public func sendFormToCreate(contract: ContractRequest, _ callback: @escaping (BaseCallback<Contract>) -> Void) {
+        let path    = "detran/public/contracts"
+        let request = RequestUtils.getRequest(object: contract, path: path, method: .post)
+        
+        Alamofire.request(request).validate(statusCode: 200..<299).responseObject { (response: DataResponse<Contract>) in
+            switch response.result {
+            case .success:
+                if let response = response.result.value {
+                    let callbackSuccess = BaseCallback.success(response)
+                    callback(callbackSuccess)
+                }
+                
+            case .failure(let error):
+                let callbackFailed = BaseCallback<Contract>.failed(error: error.localizedDescription)
                 callback(callbackFailed)
             }
         }

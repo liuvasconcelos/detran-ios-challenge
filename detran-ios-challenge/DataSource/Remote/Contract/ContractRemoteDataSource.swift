@@ -10,4 +10,5 @@ import Foundation
 
 public protocol ContractRemoteDataSource: class {
     func loadContracts(_ callback: @escaping (BaseCallback<[Contract]>) -> Void)
+    func sendFormToCreate(contract: ContractRequest, _ callback: @escaping (BaseCallback<Contract>) -> Void)
 }
