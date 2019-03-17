@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKh-AV-7Iz">
+                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKh-AV-7Iz">
                         <rect key="frame" x="16" y="242" width="288" height="30"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <nil key="textColor"/>
@@ -41,20 +41,40 @@
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhk-iC-e9O">
                         <rect key="frame" x="16" y="510" width="288" height="30"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.78294259310000003" green="0.17025431990000001" blue="0.079549647870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.041659958660000003" green="0.44030886889999998" blue="0.1231196895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="Entrar">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <action selector="login:" destination="R7v-bQ-R1x" eventType="touchUpInside" id="swU-LM-aSn"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="denatran" translatesAutoresizingMaskIntoConstraints="NO" id="t7s-2b-yor">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1D-7L-kL9">
+                        <rect key="frame" x="23" y="247" width="275" height="22"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="selectState:" destination="R7v-bQ-R1x" eventType="touchUpInside" id="HVV-bZ-9D4"/>
+                        </connections>
+                    </button>
+                    <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUc-9n-Ohk">
+                        <rect key="frame" x="0.0" y="440" width="320" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </pickerView>
                 </subviews>
-                <color key="backgroundColor" red="0.0033299399074167013" green="0.034630738198757172" blue="0.097992636263370514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <viewLayoutGuide key="safeArea" id="4Xa-Ew-dmC"/>
             </view>
             <connections>
-                <outlet property="detranIdentifierTextField" destination="VKh-AV-7Iz" id="K24-Kc-rUV"/>
+                <outlet property="chooseStatePickerView" destination="oUc-9n-Ohk" id="Ixt-2Z-sv1"/>
+                <outlet property="detranIdentifier" destination="VKh-AV-7Iz" id="XiE-3g-plZ"/>
                 <outlet property="loginButton" destination="dhk-iC-e9O" id="LPt-rl-g6Q"/>
                 <outlet property="passwordTextField" destination="ET9-Sk-jeR" id="zsC-cU-pOo"/>
                 <outlet property="userNameTextField" destination="inz-bw-QVU" id="xng-bv-FDD"/>
@@ -62,4 +82,7 @@
             <point key="canvasLocation" x="519.375" y="-8.4507042253521121"/>
         </viewController>
     </objects>
+    <resources>
+        <image name="denatran" width="415" height="260"/>
+    </resources>
 </document>

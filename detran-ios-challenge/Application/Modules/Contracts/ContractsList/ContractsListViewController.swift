@@ -22,6 +22,8 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
     override func viewDidLoad() {
         super.viewDidLoad()
         contractsTableView.viewContract = self
+        
+        self.navigationItem.title = "Contratos"
     }
     
     override func viewWillAppear(_ animated: Bool) {

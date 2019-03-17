@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let loginView  = LoginViewController.fromNib().or(LoginViewController())
         let navigation = UINavigationController(rootViewController: loginView)
-        UINavigationBar.appearance().tintColor           = UIColor.red
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        UINavigationBar.appearance().tintColor           = UIColor.gray
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
         
         navigation.isNavigationBarHidden = true
         window!.rootViewController = navigation
