@@ -100,5 +100,31 @@ public class InsideContract: Codable, Mappable {
         mainRecipientCpfCnpj     <- map["cpf_cnpj_principal_recebedor_pagto"]
     }
     
+    enum CodingKeys: String, CodingKey {
+        case indexes                  = "indices"
+        case commission               = "comissao"
+        case lateFee                  = "taxa_mora"
+        case iofValue                 = "valor_iof"
+        case mulct                    = "penalidade"
+        case comments                 = "comentarios"
+        case gravameNumber            = "numero_gravame"
+        case restrictionType          = "tipo_restricao"
+        case fineRate                 = "taxa_taxa_multa"
+        case lateFeeValue             = "valor_taxa_mora"
+        case contractDate             = "data_do_contrato"
+        case numberOfMonths           = "quantidade_meses"
+        case fineRateValue            = "valor_taxa_multa"
+        case vendorDocumentType       = "tipo_doc_vendedor"
+        case commitionIndication      = "indicacao_comissao"
+        case contractNumber           = "numero_do_contrato"
+        case recipientDocumentType    = "tipo_doc_recebedor"
+        case amountOfInterestPerYear  = "valor_juros_ao_ano"
+        case amountOfInterestPerMonth = "valor_juros_ao_mes"
+        case mulctIndication          = "indicacao_penalidade"
+        case vendorCpfCnpj            = "cpf_cnpj_vendedor_bem"
+        case contractFeeValue         = "valor_taxa_de_contrato"
+        case mainRecipientPayment     = "principal_recebedor_pagto"
+        case mainRecipientCpfCnpj     = "cpf_cnpj_principal_recebedor_pagto"
+    }
 }
 

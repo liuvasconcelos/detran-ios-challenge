@@ -43,4 +43,14 @@ public class Vehicle: Codable, Mappable {
         ufGravameRegister <- map["uf_registro_gravame"]
     }
     
+    enum CodingKeys: String, CodingKey {
+        case chassis           = "chassi"
+        case renavam           = "renavam"
+        case ufBoard           = "uf_placa"
+        case reprice           = "remarcado"
+        case modelYear         = "ano_do_modelo"
+        case manufactureYear   = "ano_de_fabricacao"
+        case ufGravameRegister = "uf_registro_gravame"
+    }
+    
 }
