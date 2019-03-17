@@ -47,6 +47,11 @@ class HomeViewController: UIViewController, HomeViewContract {
     }
     
     @IBAction func goToAddVehicleScreen(_ sender: Any) {
+        let createVehicleViewController = CreateVehicleViewController.fromNib().or(CreateVehicleViewController())
+        
+        self.navigationController?.isNavigationBarHidden = false
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(createVehicleViewController, animated: true)
     }
     
     @IBAction func goToAddCreditorScreen(_ sender: Any) {

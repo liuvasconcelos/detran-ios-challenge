@@ -49,6 +49,11 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
                 }
                 
             case .failure(let error):
+                if response.response?.statusCode == 400 {
+                    self.sendFormToCreate(contract: ContractRequest(request: contract), callback)
+                    return
+                }
+                
                 let callbackFailed = BaseCallback<Contract>.failed(error: error.localizedDescription)
                 callback(callbackFailed)
             }

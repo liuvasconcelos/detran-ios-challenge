@@ -26,7 +26,7 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
     }
     
     @IBAction func sendFormToCreate(_ sender: Any) {
-        presenter.sendFormToCreate(contract: ContractRequest(code: 12345678,
+        presenter.sendFormToCreate(contract: ContractRequest(code: 789,
                                                              endUsersDocument: "123456",
                                                              personal: Personal(rg: "H73839K", name: "Teste Livia"),
                                                              contract: InsideContract(indexes: "a",
@@ -52,7 +52,8 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
                                                                                       vendorCpfCnpj: "a",
                                                                                       contractFeeValue: 1,
                                                                                       mainRecipientPayment: "a",
-                                                                                      mainRecipientCpfCnpj: "a")))
+                                                                                      mainRecipientCpfCnpj: "a"),
+                                                             vehicle: nil))
     }
     
     func showSuccessAlert() {
