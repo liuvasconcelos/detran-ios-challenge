@@ -39,6 +39,18 @@
 		534ADE20223EA32200F88F27 /* CreateCredorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */; };
 		534ADE24223EA35900F88F27 /* CreateCredorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */; };
 		534ADE26223EA37300F88F27 /* CreateCredorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE25223EA37300F88F27 /* CreateCredorContract.swift */; };
+		534ADE2D223EA9CD00F88F27 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE2C223EA9CD00F88F27 /* Login.swift */; };
+		534ADE2F223EAA1700F88F27 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE2E223EAA1700F88F27 /* Home.swift */; };
+		534ADE31223EAA3F00F88F27 /* ContractsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE30223EAA3F00F88F27 /* ContractsList.swift */; };
+		534ADE33223EAA5200F88F27 /* CreateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE32223EAA5200F88F27 /* CreateContract.swift */; };
+		534ADE35223EAA7200F88F27 /* CreateVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE34223EAA7200F88F27 /* CreateVehicle.swift */; };
+		534ADE37223EAA8600F88F27 /* CreateCredor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE36223EAA8600F88F27 /* CreateCredor.swift */; };
+		534ADE39223EAAB900F88F27 /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE38223EAAB900F88F27 /* LoginViewControllerUITests.swift */; };
+		534ADE3B223EAB0E00F88F27 /* HomeViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3A223EAB0E00F88F27 /* HomeViewControllerUITests.swift */; };
+		534ADE3D223EAB5100F88F27 /* ContractsListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3C223EAB5100F88F27 /* ContractsListViewControllerUITests.swift */; };
+		534ADE3F223EAB7300F88F27 /* CreateContractViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */; };
+		534ADE41223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */; };
+		534ADE43223EABB800F88F27 /* CreateCredorViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */; };
 		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
 		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
 		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
@@ -65,8 +77,6 @@
 		53530047223D8FC3003AC039 /* DetroySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53530046223D8FC3003AC039 /* DetroySession.swift */; };
 		5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFD8223D7D54003AC039 /* AppDelegate.swift */; };
 		5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5353FFDF223D7D55003AC039 /* Assets.xcassets */; };
-		5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */; };
-		5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */; };
 		71C24A3E4833D30229476235 /* Pods_detran_ios_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1775F2CE5123780F75B25A /* Pods_detran_ios_challengeTests.framework */; };
 		90E1FBEE29D2FB4CEBBDB00A /* Pods_detran_ios_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8501CED462B10C4C00F81306 /* Pods_detran_ios_challengeUITests.framework */; };
 		934306A5264BD555724A08F3 /* Pods_detran_ios_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1DBFD2F276D727E8B6957F /* Pods_detran_ios_challenge.framework */; };
@@ -123,6 +133,18 @@
 		534ADE1F223EA32200F88F27 /* CreateCredorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorViewController.swift; sourceTree = "<group>"; };
 		534ADE23223EA35900F88F27 /* CreateCredorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorPresenter.swift; sourceTree = "<group>"; };
 		534ADE25223EA37300F88F27 /* CreateCredorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorContract.swift; sourceTree = "<group>"; };
+		534ADE2C223EA9CD00F88F27 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		534ADE2E223EAA1700F88F27 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		534ADE30223EAA3F00F88F27 /* ContractsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsList.swift; sourceTree = "<group>"; };
+		534ADE32223EAA5200F88F27 /* CreateContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContract.swift; sourceTree = "<group>"; };
+		534ADE34223EAA7200F88F27 /* CreateVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicle.swift; sourceTree = "<group>"; };
+		534ADE36223EAA8600F88F27 /* CreateCredor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredor.swift; sourceTree = "<group>"; };
+		534ADE38223EAAB900F88F27 /* LoginViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE3A223EAB0E00F88F27 /* HomeViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE3C223EAB5100F88F27 /* ContractsListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsListViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorViewControllerUITests.swift; sourceTree = "<group>"; };
 		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
 		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
 		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
@@ -152,10 +174,7 @@
 		5353FFDF223D7D55003AC039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5353FFE4223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5353FFE9223D7D55003AC039 /* detran-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeTests.swift; sourceTree = "<group>"; };
-		5353FFEF223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5353FFF4223D7D55003AC039 /* detran-ios-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detran-ios-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detran_ios_challengeUITests.swift; sourceTree = "<group>"; };
 		5353FFFA223D7D55003AC039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8501CED462B10C4C00F81306 /* Pods_detran_ios_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detran_ios_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1DBFD2F276D727E8B6957F /* Pods_detran_ios_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detran_ios_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +375,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		534ADE29223EA9A200F88F27 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE2C223EA9CD00F88F27 /* Login.swift */,
+				534ADE2E223EAA1700F88F27 /* Home.swift */,
+				534ADE30223EAA3F00F88F27 /* ContractsList.swift */,
+				534ADE32223EAA5200F88F27 /* CreateContract.swift */,
+				534ADE34223EAA7200F88F27 /* CreateVehicle.swift */,
+				534ADE36223EAA8600F88F27 /* CreateCredor.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		534ADE2A223EA9A900F88F27 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE38223EAAB900F88F27 /* LoginViewControllerUITests.swift */,
+				534ADE3A223EAB0E00F88F27 /* HomeViewControllerUITests.swift */,
+				534ADE3C223EAB5100F88F27 /* ContractsListViewControllerUITests.swift */,
+				534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */,
+				534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */,
+				534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		53530006223D82EF003AC039 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,7 +568,6 @@
 			isa = PBXGroup;
 			children = (
 				5353FFD7223D7D54003AC039 /* detran-ios-challenge */,
-				5353FFEC223D7D55003AC039 /* detran-ios-challengeTests */,
 				5353FFF7223D7D55003AC039 /* detran-ios-challengeUITests */,
 				5353FFD6223D7D54003AC039 /* Products */,
 				4B4EE398737E4C6447C120E7 /* Pods */,
@@ -554,19 +598,11 @@
 			path = "detran-ios-challenge";
 			sourceTree = "<group>";
 		};
-		5353FFEC223D7D55003AC039 /* detran-ios-challengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				5353FFED223D7D55003AC039 /* detran_ios_challengeTests.swift */,
-				5353FFEF223D7D55003AC039 /* Info.plist */,
-			);
-			path = "detran-ios-challengeTests";
-			sourceTree = "<group>";
-		};
 		5353FFF7223D7D55003AC039 /* detran-ios-challengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5353FFF8223D7D55003AC039 /* detran_ios_challengeUITests.swift */,
+				534ADE29223EA9A200F88F27 /* Pages */,
+				534ADE2A223EA9A900F88F27 /* UITests */,
 				5353FFFA223D7D55003AC039 /* Info.plist */,
 			);
 			path = "detran-ios-challengeUITests";
@@ -651,6 +687,7 @@
 					};
 					5353FFF3223D7D55003AC039 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 5353FFD4223D7D54003AC039;
 					};
 				};
@@ -854,7 +891,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFEE223D7D55003AC039 /* detran_ios_challengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,7 +898,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5353FFF9223D7D55003AC039 /* detran_ios_challengeUITests.swift in Sources */,
+				534ADE3F223EAB7300F88F27 /* CreateContractViewControllerUITests.swift in Sources */,
+				534ADE43223EABB800F88F27 /* CreateCredorViewControllerUITests.swift in Sources */,
+				534ADE41223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift in Sources */,
+				534ADE35223EAA7200F88F27 /* CreateVehicle.swift in Sources */,
+				534ADE2F223EAA1700F88F27 /* Home.swift in Sources */,
+				534ADE31223EAA3F00F88F27 /* ContractsList.swift in Sources */,
+				534ADE3B223EAB0E00F88F27 /* HomeViewControllerUITests.swift in Sources */,
+				534ADE2D223EA9CD00F88F27 /* Login.swift in Sources */,
+				534ADE37223EAA8600F88F27 /* CreateCredor.swift in Sources */,
+				534ADE39223EAAB900F88F27 /* LoginViewControllerUITests.swift in Sources */,
+				534ADE33223EAA5200F88F27 /* CreateContract.swift in Sources */,
+				534ADE3D223EAB5100F88F27 /* ContractsListViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +978,7 @@
 			baseConfigurationReference = 8E6DB4EB2DD4FA11832879FD /* Pods-detran-ios-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9CMSL6QFV;
 				INFOPLIST_FILE = "detran-ios-challengeUITests/Info.plist";
@@ -941,6 +989,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "detran-ios-challengeUITests/Pages/detran-ios-challengeUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "detran-ios-challenge";
@@ -952,6 +1002,7 @@
 			baseConfigurationReference = EDDA01D474C9C878F94B8164 /* Pods-detran-ios-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9CMSL6QFV;
 				INFOPLIST_FILE = "detran-ios-challengeUITests/Info.plist";
@@ -962,6 +1013,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liuvasconcelos.detran-ios-challengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "detran-ios-challengeUITests/Pages/detran-ios-challengeUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "detran-ios-challenge";
