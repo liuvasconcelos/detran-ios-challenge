@@ -16,7 +16,9 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
     
     lazy var presenter: ContractsListPresenterContract = {
         return ContractsListPresenter(view: self,
-                                      getContract: GetContract(remoteDataSource: ContractRemoteDataSourceImpl.shared))
+                                      getContract: GetContract(remoteDataSource: ContractRemoteDataSourceImpl.shared),
+                                      getAuth: GetAuth(remoteDataSource: AuthenticationRemoteDataSourceImpl.shared),
+                                      saveSession: SaveSession(localDataSource: SessionLocalDataSourceImpl.shared))
     }()
     
     override func viewDidLoad() {

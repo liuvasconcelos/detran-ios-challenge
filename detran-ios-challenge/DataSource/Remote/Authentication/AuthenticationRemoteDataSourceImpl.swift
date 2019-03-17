@@ -20,7 +20,10 @@ public class AuthenticationRemoteDataSourceImpl: AuthenticationRemoteDataSource 
         Alamofire.request(request).validate(statusCode: 200..<299).responseObject { (response: DataResponse<AuthResponse>) in
             switch response.result {
             case .success(let authResponse):
-                let callbackSuccess = BaseCallback.success(authResponse)
+                let response = authResponse
+                response.financialUser?.set(password: authRequest.password ?? "")
+                response.financialUser?.set(userName: authRequest.userName ?? "")
+                let callbackSuccess = BaseCallback.success(response)
                 apiAuthCallback(callbackSuccess)
             case .failure(let error):
                 let callbackFailed = BaseCallback<AuthResponse>.failed(error: error.localizedDescription)

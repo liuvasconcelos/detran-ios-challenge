@@ -84,4 +84,18 @@ struct RequestUtils {
         return userUuid ?? ""
     }
     
+    public static func getAuthRequest() -> AuthRequest {
+        let authSaved = KeychainWrapper.standard.string(forKey: "auth").or("")
+        let auth      = Mapper<AuthResponse>().map(JSONString: authSaved)
+        
+        if let validAuth = auth {
+            return AuthRequest(financialsCode: validAuth.financialUser?.financialsCode ?? 0,
+                               userName: validAuth.financialUser?.userName ?? "",
+                               password: validAuth.financialUser?.password ?? "")
+        }
+        return AuthRequest(financialsCode: 0,
+                           userName: "",
+                           password: "")
+    }
+    
 }

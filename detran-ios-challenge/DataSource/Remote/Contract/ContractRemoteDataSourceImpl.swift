@@ -30,6 +30,11 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
                 }
                 
             case .failure(let error):
+                if response.response?.statusCode == 401 {
+                    let callbackFailed = BaseCallback<[Contract]>.failed(error: "auth")
+                    callback(callbackFailed)
+                    return
+                }
                 let callbackFailed = BaseCallback<[Contract]>.failed(error: error.localizedDescription)
                 callback(callbackFailed)
             }
@@ -52,6 +57,10 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
                 if response.response?.statusCode == 400 {
                     self.sendFormToCreate(contract: ContractRequest(request: contract), callback)
                     return
+                } else if response.response?.statusCode == 401 {
+                    let callbackFailed = BaseCallback<Contract>.failed(error: "auth")
+                    callback(callbackFailed)
+                    return
                 }
                 
                 let callbackFailed = BaseCallback<Contract>.failed(error: error.localizedDescription)
@@ -59,4 +68,5 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
             }
         }
     }
+    
 }

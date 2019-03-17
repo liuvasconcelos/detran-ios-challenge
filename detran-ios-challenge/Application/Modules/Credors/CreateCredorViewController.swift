@@ -44,7 +44,9 @@ class CreateCredorViewController: UIViewController, CreateCredorViewContract {
     
     lazy var presenter: CreateCredorPresenterContract = {
         return CreateCredorPresenter(view: self,
-                                     createContract: CreateContract(remoteDataSource: ContractRemoteDataSourceImpl.shared))
+                                     createContract: CreateContract(remoteDataSource: ContractRemoteDataSourceImpl.shared),
+                                     getAuth: GetAuth(remoteDataSource: AuthenticationRemoteDataSourceImpl.shared),
+                                     saveSession: SaveSession(localDataSource: SessionLocalDataSourceImpl.shared))
     }()
     
     override func viewDidLoad() {

@@ -14,6 +14,8 @@ public class FinancialUser: Codable, Mappable {
     var uuid: String?
     var financialsCode: Int?
     var name: String?
+    var password: String = ""
+    var userName: String = ""
     
     init(uuid: String, financialsCode: Int, name: String) {
         self.uuid           = uuid
@@ -32,6 +34,16 @@ public class FinancialUser: Codable, Mappable {
         uuid           <- map["uuid"]
         financialsCode <- map["financialsCode"]
         name           <- map["name"]
+        password       <- map["password"]
+        userName       <- map["userName"]
+    }
+    
+    public func set(password: String) {
+        self.password = password
+    }
+    
+    public func set(userName: String) {
+        self.userName = userName
     }
     
 }

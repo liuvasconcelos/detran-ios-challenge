@@ -33,7 +33,9 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
     
     lazy var presenter: CreateVehiclePresenterContract = {
         return CreateVehiclePresenter(view: self,
-                                      createContract: CreateContract(remoteDataSource: ContractRemoteDataSourceImpl.shared))
+                                      createContract: CreateContract(remoteDataSource: ContractRemoteDataSourceImpl.shared),
+                                      getAuth: GetAuth(remoteDataSource: AuthenticationRemoteDataSourceImpl.shared),
+                                      saveSession: SaveSession(localDataSource: SessionLocalDataSourceImpl.shared))
     }()
     
     override func viewDidLoad() {
