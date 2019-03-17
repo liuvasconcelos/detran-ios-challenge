@@ -64,6 +64,8 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
     @IBOutlet weak var mainPaymentRecipient: UITextField!
     @IBOutlet weak var mainPaymentRecipientCpfCnpj: UITextField!
     
+    @IBOutlet weak var sendContractButton: UIButton!
+    
     var loader: UIActivityIndicatorView = UIActivityIndicatorView()
 
     lazy var presenter: CreateContractPresenterContract = {
@@ -73,11 +75,43 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Cadastrar contrato"
+        self.navigationItem.title = AppStrings.register_a_contract
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.setLabels()
+    }
+    
+    fileprivate func setLabels() {
+        personNameLabel.text                  = AppStrings.personName
+        rgLabel.text                          = AppStrings.rg
+        indexesLabel.text                     = AppStrings.indexes
+        commissionLabel.text                  = AppStrings.commition
+        lateFeeLabel.text                     = AppStrings.late_fee
+        iofValueLabel.text                    = AppStrings.iof_value
+        mulctLabel.text                       = AppStrings.mulct
+        commentsLabel.text                    = AppStrings.comments
+        gravameNumberLabel.text               = AppStrings.gravame_number
+        restrictionTypeLabel.text             = AppStrings.restriction_type
+        fineRateLabel.text                    = AppStrings.fine_rate
+        lateFeeValueLabel.text                = AppStrings.late_fee_value
+        contractDateLabel.text                = AppStrings.contract_date
+        numberOfMonthsLabel.text              = AppStrings.quantity_of_months
+        fineRateValueLabel.text               = AppStrings.fine_rate_value
+        vendorDocumentTypeLabel.text          = AppStrings.vendor_document_type
+        commitionIndicationLabel.text         = AppStrings.commition_indication
+        contractNumberLabel.text              = AppStrings.contract_number
+        recipientDocumentTypeLabel.text       = AppStrings.recipient_document_type
+        amountInterestPerYearLabel.text       = AppStrings.amount_interest_per_year
+        amountInterestPerMonthLabel.text      = AppStrings.amount_interest_per_month
+        mulctIndicationLabel.text             = AppStrings.mulct_indication
+        vendorCpfCnpjLabel.text               = AppStrings.vendor_cpf_cnpj
+        contractFeeValueLabel.text            = AppStrings.contract_fee_value
+        mainPaymentRecipientLabel.text        = AppStrings.main_payment_recipient
+        mainPaymentRecipientCpfCnpjLabel.text = AppStrings.main_payment_recipient_cpf_cnpj
+        
+        sendContractButton.setTitle(AppStrings.register_a_contract, for: .normal)
     }
     
     @IBAction func sendFormToCreate(_ sender: Any) {
@@ -114,7 +148,7 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
     }
     
     func showSuccessAlert() {
-        let alertController = UIAlertController(title: "", message: "Sucesso", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.add_a_contract_success_message, preferredStyle: .alert)
         let okButton        = UIAlertAction(title: "Ok", style: .cancel) { (action:UIAlertAction) in
             self.dismissViewController()
         }
@@ -143,7 +177,7 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
     }
     
     func showError() {
-        let alertController = UIAlertController(title: "", message: "Erro", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.add_a_contract_error_message, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Ok", style: .default)
         

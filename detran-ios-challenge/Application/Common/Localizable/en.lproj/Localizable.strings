@@ -1,0 +1,86 @@
+/* 
+  Localizable.strings
+  detran-ios-challenge
+
+  Created by Livia Vasconcelos on 17/03/19.
+  Copyright © 2019 Livia Vasconcelos. All rights reserved.
+*/
+
+// General
+"required_field" = "Required Field";
+"reload"         = "Reload";
+"cancel"         = "Cancel";
+"back"           = "Back to home";
+
+// Login
+"login"    = "Login";
+"username" = "Username";
+"password" = "Password";
+
+// Home
+"see_all_contracts"   = "See all contracts";
+"register_a_contract" = "Register a contract";
+"register_a_vehicle"  = "Register a vehicle";
+"register_a_credor"   = "Register a credor";
+"logout"              = "Logout";
+
+// Contracts list
+"contracts" = "Contracts";
+"contract_list_error_message" = "Something happened and data could not be loaded.";
+"contract_list_empty_message" = "No contracts to show.";
+
+// Add a contract
+"personName"                      = "Person name";
+"rg"                              = "RG";
+"indexes"                         = "Indexes";
+"commition"                       = "Commition";
+"late_fee"                        = "Late fee";
+"iof_value"                       = "Iof value";
+"mulct"                           = "Mulct";
+"comments"                        = "Comments";
+"gravame_number"                  = "Gravame number";
+"restriction_type"                = "Restriction type";
+"fine_rate"                       = "Fine rate";
+"late_fee_value"                  = "Late fee value";
+"contract_date"                   = "Contract date";
+"quantity_of_months"              = "Quantity of months";
+"fine_rate_value"                 = "Fine rate value";
+"vendor_document_type"            = "Vendor document type";
+"commition_indication"            = "Commition indication";
+"contract_number"                 = "Contract number";
+"recipient_document_type"         = "Recipient document type";
+"amount_interest_per_year"        = "Amount interest per year";
+"amount_interest_per_month"       = "Amount interest per month";
+"mulct_indication"                = "Mulct indication";
+"vendor_cpf_cnpj"                 = "Vendor CPF/CNPJ";
+"contract_fee_value"              = "Contract fee value";
+"main_payment_recipient"          = "Main payment recipient";
+"main_payment_recipient_cpf_cnpj" = "Main payment recipient CPF/CNPJ";
+"add_a_contract_success_message"  = "Contract successful added.";
+"add_a_contract_error_message"    = "Something happened and data could not be loaded.";
+
+// Add a vehicle
+"chassi"                        = "Chassi";
+"renavam"                       = "Renavam";
+"board"                         = "Board";
+"reprice"                       = "Reprice";
+"model_year"                    = "Model year";
+"manufacture_year"              = "Manufacture year";
+"uf_gravame"                    = "UF Gravame";
+"add_a_vehicle_success_message" = "Vehicle successful added.";
+"add_a_vehicle_error_message"   = "Something happened and data could not be loaded.";
+
+// Add a credor
+"uf"                           = "UF";
+"cep"                          = "Zip code";
+"neighborhood"                 = "Neighborhood";
+"address"                      = "Address";
+"phone_number"                 = "Phone number";
+"city"                         = "City";
+"financed"                     = "Financed";
+"address_number"               = "Address number";
+"institution_name"             = "Institution name";
+"complement"                   = "Address complement";
+"type"                         = "Type";
+"add_a_credor_success_message" = "Credor successful added.";
+"add_a_credor_error_message"   = "Something happened and data could not be loaded.";

@@ -23,7 +23,7 @@ class  ContractsListCell: UITableViewCell {
     }
     
     func configureViewFor(contract: Contract) {
-        self.contractNumberLabel.text = "Número do contrato:"
+        self.contractNumberLabel.text = AppStrings.contract_number
         self.numberLabel.text         = "\(contract.code!)"
         
         if contract.status ?? false {

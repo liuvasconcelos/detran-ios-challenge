@@ -40,8 +40,9 @@ class LoginViewController: UIViewController, LoginViewContract {
         self.chooseStatePickerView.dataSource = self
         
         self.detranIdentifier.placeholder  = states.first
-        self.userNameTextField.placeholder = "Username"
-        self.passwordTextField.placeholder = "Password"
+        self.userNameTextField.placeholder = AppStrings.username
+        self.passwordTextField.placeholder = AppStrings.password
+        self.loginButton.setTitle(AppStrings.login, for: .normal)
         
         if presenter.isUserLogged() {
             self.goToHomeScreen()
@@ -57,8 +58,8 @@ class LoginViewController: UIViewController, LoginViewContract {
     }
     
     private func registerFieldsToValidate() {
-        validator.registerField(userNameTextField, rules: [RequiredRule(message: "Required field")])
-        validator.registerField(passwordTextField, rules: [RequiredRule(message: "Required field")])
+        validator.registerField(userNameTextField, rules: [RequiredRule(message: AppStrings.required_field)])
+        validator.registerField(passwordTextField, rules: [RequiredRule(message: AppStrings.required_field)])
     }
     
     func loginSuccessful() {

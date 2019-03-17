@@ -28,6 +28,12 @@ class HomeViewController: UIViewController, HomeViewContract {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        
+        self.seeAllContractsButton.setTitle(AppStrings.see_all_contracts, for: .normal)
+        self.addAContractButton.setTitle(AppStrings.register_a_contract, for: .normal)
+        self.addAVehicleButton.setTitle(AppStrings.register_a_vehicle, for: .normal)
+        self.addACreditorButton.setTitle(AppStrings.register_a_credor, for: .normal)
+        self.logoutButton.setTitle(AppStrings.logout, for: .normal)
     }
     
     @IBAction func goToContractsListScreen(_ sender: Any) {

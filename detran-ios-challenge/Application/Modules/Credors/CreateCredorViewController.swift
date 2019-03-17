@@ -38,6 +38,8 @@ class CreateCredorViewController: UIViewController, CreateCredorViewContract {
     @IBOutlet weak var complement: UITextField!
     @IBOutlet weak var type: UITextField!
     
+    @IBOutlet weak var createCredorButton: UIButton!
+    
     var loader: UIActivityIndicatorView = UIActivityIndicatorView()
     
     lazy var presenter: CreateCredorPresenterContract = {
@@ -47,11 +49,30 @@ class CreateCredorViewController: UIViewController, CreateCredorViewContract {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Cadastrar credor"
+        self.navigationItem.title = AppStrings.register_a_credor
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.setLabels()
+    }
+    
+    fileprivate func setLabels() {
+        personNameLabel.text      = AppStrings.personName
+        rgLabel.text              = AppStrings.rg
+        ufLabel.text              = AppStrings.uf
+        cepLabel.text             = AppStrings.cep
+        neighborhoodLabel.text    = AppStrings.neighborhood
+        addressLabel.text         = AppStrings.address
+        phoneNumberLabel.text     = AppStrings.phone_number
+        cityLabel.text            = AppStrings.city
+        financedLabel.text        = AppStrings.financed
+        numberLabel.text          = AppStrings.address_number
+        institutionNameLabel.text = AppStrings.institution_name
+        complementLabel.text      = AppStrings.complement
+        typeLabel.text            = AppStrings.type
+        
+        createCredorButton.setTitle(AppStrings.register_a_credor, for: .normal)
     }
     
     @IBAction func sendFormToCreate(_ sender: Any) {
@@ -75,7 +96,7 @@ class CreateCredorViewController: UIViewController, CreateCredorViewContract {
     }
     
     func showSuccessAlert() {
-        let alertController = UIAlertController(title: "", message: "Sucesso", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.add_a_credor_success_message, preferredStyle: .alert)
         let okButton        = UIAlertAction(title: "Ok", style: .cancel) { (action:UIAlertAction) in
             self.dismissViewController()
         }
@@ -104,7 +125,7 @@ class CreateCredorViewController: UIViewController, CreateCredorViewContract {
     }
     
     func showError() {
-        let alertController = UIAlertController(title: "", message: "Erro", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.add_a_credor_error_message, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Ok", style: .default)
         

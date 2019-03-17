@@ -166,6 +166,7 @@
                 <outlet property="boardLabel" destination="1hh-K0-ba0" id="ykW-nR-x8G"/>
                 <outlet property="chassi" destination="UaA-9Y-Bxi" id="Zwe-DC-V99"/>
                 <outlet property="chassiLabel" destination="uRs-kF-wyR" id="4HF-gX-Eeg"/>
+                <outlet property="createVehicle" destination="omp-4s-ARv" id="igj-YL-ND6"/>
                 <outlet property="manufactureYear" destination="Gae-ji-BDg" id="rGZ-js-0d6"/>
                 <outlet property="manufactureYearLabel" destination="PNh-EA-knu" id="2Dy-SB-SUC"/>
                 <outlet property="modelYear" destination="BHf-gr-aqV" id="Ytz-h7-Yv1"/>

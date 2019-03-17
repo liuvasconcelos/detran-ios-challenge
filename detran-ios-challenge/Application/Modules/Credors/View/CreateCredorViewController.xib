@@ -262,6 +262,7 @@
                 <outlet property="cityLabel" destination="26R-uN-v8v" id="ZJ2-UF-Rv7"/>
                 <outlet property="complement" destination="4sy-yw-TMk" id="FXE-yZ-PuF"/>
                 <outlet property="complementLabel" destination="kp4-yZ-qfO" id="8aj-Xi-poV"/>
+                <outlet property="createCredorButton" destination="37Q-kU-dlg" id="ZZr-xE-4Zc"/>
                 <outlet property="financed" destination="U7y-lK-7Zc" id="EnI-Xg-qOh"/>
                 <outlet property="financedLabel" destination="mMo-1R-Cof" id="Vm4-Ny-N5z"/>
                 <outlet property="institutionName" destination="9Ea-cp-gab" id="bzv-Lf-hTn"/>

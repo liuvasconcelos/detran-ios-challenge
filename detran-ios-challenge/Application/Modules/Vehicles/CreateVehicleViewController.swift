@@ -27,6 +27,8 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
     @IBOutlet weak var manufactureYear: UITextField!
     @IBOutlet weak var ufGravame: UITextField!
     
+    @IBOutlet weak var createVehicle: UIButton!
+    
     var loader: UIActivityIndicatorView = UIActivityIndicatorView()
     
     lazy var presenter: CreateVehiclePresenterContract = {
@@ -36,11 +38,24 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Cadastrar veículo"
+        self.navigationItem.title = AppStrings.register_a_vehicle
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.setLabels()
+    }
+    
+    fileprivate func setLabels() {
+        chassiLabel.text          = AppStrings.chassi
+        renavamLabel.text         = AppStrings.renavam
+        boardLabel.text           = AppStrings.board
+        repriceLabel.text         = AppStrings.reprice
+        modelYearLabel.text       = AppStrings.model_year
+        manufactureYearLabel.text = AppStrings.manufacture_year
+        ufGravameLabel.text       = AppStrings.uf_gravame
+        
+        createVehicle.setTitle(AppStrings.register_a_vehicle, for: .normal)
     }
     
     @IBAction func sendFormToCreate(_ sender: Any) {
@@ -58,7 +73,7 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
     }
     
     func showSuccessAlert() {
-        let alertController = UIAlertController(title: "", message: "Sucesso", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.add_a_vehicle_success_message, preferredStyle: .alert)
         let okButton        = UIAlertAction(title: "Ok", style: .cancel) { (action:UIAlertAction) in
             self.dismissViewController()
         }
@@ -87,7 +102,7 @@ class CreateVehicleViewController: UIViewController, CreateVehicleViewContract {
     }
     
     func showError() {
-        let alertController = UIAlertController(title: "", message: "Erro", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.add_a_vehicle_error_message, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Ok", style: .default)
         

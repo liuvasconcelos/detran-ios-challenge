@@ -476,6 +476,7 @@
                 <outlet property="restrictionTypeLabel" destination="YXQ-Fm-Xgq" id="D4D-Gc-sAX"/>
                 <outlet property="rg" destination="mGq-Av-HET" id="e78-4e-rbl"/>
                 <outlet property="rgLabel" destination="X4u-xC-2oK" id="C11-so-Edf"/>
+                <outlet property="sendContractButton" destination="1kp-3Y-4TM" id="hOn-5q-qk0"/>
                 <outlet property="vendorCpfCnpj" destination="PXk-yf-ZMq" id="kWM-0Z-PR3"/>
                 <outlet property="vendorCpfCnpjLabel" destination="mS7-b5-9rK" id="dXC-lI-tAZ"/>
                 <outlet property="vendorDocumentType" destination="i4Y-e0-aIc" id="f3I-hG-N2x"/>
