@@ -56,4 +56,18 @@ public class Credor: Codable, Mappable {
         addressComplement      <- map["endereco_numero_complement"]
     }
     
+    enum CodingKeys: String, CodingKey {
+        case uf                     = "uf"
+        case cep                    = "cep"
+        case type                   = "tipo"
+        case neighborhood           = "bairro"
+        case address                = "endereco"
+        case phoneNumber            = "telefone"
+        case city                   = "municipio"
+        case financed               = "financiado"
+        case addressNumber          = "endereco_numero"
+        case financialInstituteName = "nome_agente_financeiro_instituicao_financeira"
+        case addressComplement      = "endereco_numero_complement"
+    }
+    
 }
