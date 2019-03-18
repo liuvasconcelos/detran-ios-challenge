@@ -13,14 +13,29 @@ class CreateContractViewControllerUITests: XCTestCase {
     let app = XCUIApplication()
     
     var loginScreen: Login?
+    var homeScreen: Home?
+    var createContractScreen: CreateContract?
     
     var bundle: Bundle?
     
     override func setUp() {
         super.setUp()
-        bundle       = Bundle(for: CreateContractViewControllerUITests.self)
-        loginScreen  = Login(app: app)
+        bundle               = Bundle(for: CreateContractViewControllerUITests.self)
+        loginScreen          = Login(app: app)
+        homeScreen           = Home(app: app)
+        createContractScreen = CreateContract(app: app)
         app.launch()
+        homeScreen?.checkIfUserIsLoggedAndLogout()
+        loginScreen?.typeValidUsernameAndPasswordAndTryToLogin()
+        homeScreen?.goToCreateContractScreen()
+    }
+    
+    func testOpeningOfScreenWithCorrectInformation() {
+        self.checkNavigationInformation()
+    }
+    
+    fileprivate func checkNavigationInformation() {
+        XCTAssertEqual(createContractScreen?.navigationBarTitle.label, "Register a contract")
     }
     
 }

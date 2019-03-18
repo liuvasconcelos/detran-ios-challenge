@@ -15,5 +15,9 @@ class CreateCredor {
         self.app = app
     }
     
+    var navigationBarTitle: XCUIElement {
+        return app.navigationBars.firstMatch.otherElements.firstMatch
+    }
+    
 }
 
