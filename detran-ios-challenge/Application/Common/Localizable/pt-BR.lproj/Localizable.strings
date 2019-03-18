@@ -1,0 +1,89 @@
+/* 
+  Localizable.strings
+  detran-ios-challenge
+
+  Created by Livia Vasconcelos on 17/03/19.
+  Copyright © 2019 Livia Vasconcelos. All rights reserved.
+*/
+
+// General
+"required_field" = "Campos obrigatórios";
+"reload"         = "Recarregar";
+"cancel"         = "Cancelar";
+"back"           = "Voltar para a página principal";
+
+// Login
+"login"    = "Entrar";
+"username" = "Nome do usuário";
+"password" = "Senha";
+
+// Home
+"see_all_contracts"   = "Ver todos os contratos";
+"register_a_contract" = "Cadastrar um contrato";
+"register_a_vehicle"  = "Cadastrar um veículo";
+"register_a_credor"   = "Cadastrar um credor";
+"logout"              = "Sair";
+
+// Contracts list
+"contracts"                   = "Contratos";
+"contract_list_error_message" = "Algo aconteceu e os dados não puderam ser carregados.";
+"contract_list_empty_message" = "Sem contratos.";
+
+// Add a contract
+"personName"                      = "Nome da pessoa";
+"rg"                              = "RG";
+"indexes"                         = "Índices";
+"commition"                       = "Comissão";
+"late_fee"                        = "Taxa mora";
+"iof_value"                       = "Valor do Iof";
+"mulct"                           = "Penalidade";
+"comments"                        = "Comentários";
+"gravame_number"                  = "Número do gravame";
+"restriction_type"                = "Tipo de restrição";
+"fine_rate"                       = "Taxa de multa";
+"late_fee_value"                  = "Valor da taxa mora";
+"contract_date"                   = "Data do contrato";
+"quantity_of_months"              = "Quantidade de meses";
+"fine_rate_value"                 = "Valor da taxa de multa";
+"vendor_document_type"            = "Tipo de documento do vendedor";
+"commition_indication"            = "Indicação de comissão";
+"contract_number"                 = "Número do contrato";
+"recipient_document_type"         = "Tipo de documento do recebedor";
+"amount_interest_per_year"        = "Valor juros ao ano";
+"amount_interest_per_month"       = "Valor juros ao mês";
+"mulct_indication"                = "Indicação de penalidade";
+"vendor_cpf_cnpj"                 = "CPF/CNPJ do vendedor";
+"contract_fee_value"              = "Valor da taxa do contrato";
+"main_payment_recipient"          = "Principal recebedor de pagamento";
+"main_payment_recipient_cpf_cnpj" = "CPF/CNPJ do principal recebedor";
+"add_a_contract_success_message"  = "Contrato adicionado com sucesso.";
+"add_a_contract_error_message"    = "Algo aconteceu e os dados não puderam ser carregados.";
+"amount_photos"                   = "Quantidade de fotos";
+"image_sent"                      = "Imagens enviadas";
+"image_fail"                      = "Imagens não enviadas";
+
+// Add a vehicle
+"chassi"                        = "Chassi";
+"renavam"                       = "Renavam";
+"board"                         = "Placa";
+"reprice"                       = "Refaturado";
+"model_year"                    = "Ano do modelo";
+"manufacture_year"              = "Ano da fabricação";
+"uf_gravame"                    = "UF Gravame";
+"add_a_vehicle_success_message" = "Veículo adicionado com sucesso.";
+"add_a_vehicle_error_message"   = "Algo aconteceu e os dados não puderam ser carregados.";
+
+// Add a credor
+"uf"                           = "UF";
+"cep"                          = "CEP";
+"neighborhood"                 = "Bairro";
+"address"                      = "Endereço";
+"phone_number"                 = "Telefone";
+"city"                         = "Cidade";
+"financed"                     = "Financiado";
+"address_number"               = "Número";
+"institution_name"             = "Nome da instituição";
+"complement"                   = "Complemento";
+"type"                         = "Tipo";
+"add_a_credor_success_message" = "Credor adicionado com sucesso.";
+"add_a_credor_error_message"   = "Algo aconteceu e os dados não puderam ser carregados.";

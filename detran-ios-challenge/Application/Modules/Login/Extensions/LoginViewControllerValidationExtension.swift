@@ -12,7 +12,7 @@ import SwiftValidator
 extension LoginViewController: ValidationDelegate {
     
     func validationSuccessful() {
-        presenter.login(financialsCode: Int(detranIdentifierTextField.text ?? "0") ?? 0,
+        presenter.login(financialsCode: 1001,
                         userName: userNameTextField.text ?? "",
                         password: passwordTextField.text ?? "")
     }

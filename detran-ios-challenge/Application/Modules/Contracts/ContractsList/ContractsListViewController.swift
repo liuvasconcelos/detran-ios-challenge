@@ -16,12 +16,16 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
     
     lazy var presenter: ContractsListPresenterContract = {
         return ContractsListPresenter(view: self,
-                                      getContract: GetContract(remoteDataSource: ContractRemoteDataSourceImpl.shared))
+                                      getContract: GetContract(remoteDataSource: ContractRemoteDataSourceImpl.shared),
+                                      getAuth: GetAuth(remoteDataSource: AuthenticationRemoteDataSourceImpl.shared),
+                                      saveSession: SaveSession(localDataSource: SessionLocalDataSourceImpl.shared))
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         contractsTableView.viewContract = self
+        
+        self.navigationItem.title = AppStrings.contracts
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,14 +57,14 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
     }
     
     func showError() {
-        let alertController = UIAlertController(title: "", message: "Fail", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.contract_list_error_message, preferredStyle: .alert)
         
-        let reload = UIAlertAction(title: "Reload", style: .default) { (action:UIAlertAction) in
+        let reload = UIAlertAction(title: AppStrings.reload, style: .default) { (action:UIAlertAction) in
             self.hideLoader()
             self.presenter.loadContracts()
         }
         
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction) in
+        let cancel = UIAlertAction(title: AppStrings.cancel, style: .cancel) { (action:UIAlertAction) in
             self.dismissViewController()
         }
         
@@ -70,9 +74,9 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
     }
     
     func showEmptyMessage() {
-        let alertController = UIAlertController(title: "", message: "Empty", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: AppStrings.contract_list_empty_message, preferredStyle: .alert)
         
-        let back = UIAlertAction(title: "Back to home", style: .cancel) { (action:UIAlertAction) in
+        let back = UIAlertAction(title: AppStrings.back, style: .cancel) { (action:UIAlertAction) in
             self.dismissViewController()
         }
         

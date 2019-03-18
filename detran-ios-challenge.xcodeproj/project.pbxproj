@@ -51,6 +51,11 @@
 		534ADE3F223EAB7300F88F27 /* CreateContractViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */; };
 		534ADE41223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */; };
 		534ADE43223EABB800F88F27 /* CreateCredorViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */; };
+		534ADE45223ED4C200F88F27 /* LoginViewControllerPickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE44223ED4C200F88F27 /* LoginViewControllerPickerViewExtension.swift */; };
+		534ADE49223EF22300F88F27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 534ADE4B223EF22300F88F27 /* Localizable.strings */; };
+		534ADE4F223EF2A600F88F27 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE4E223EF2A600F88F27 /* AppStrings.swift */; };
+		534ADE52223F17B100F88F27 /* CreateContractViewControllerPhotoPickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE51223F17B100F88F27 /* CreateContractViewControllerPhotoPickerExtension.swift */; };
+		534ADE54223F2BC700F88F27 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534ADE53223F2BC700F88F27 /* UIImage.swift */; };
 		5353000B223D834B003AC039 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000A223D834B003AC039 /* RequestUtils.swift */; };
 		5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000C223D8355003AC039 /* CallbackEnum.swift */; };
 		5353000F223D8369003AC039 /* BaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353000E223D8369003AC039 /* BaseCallback.swift */; };
@@ -145,6 +150,12 @@
 		534ADE3E223EAB7300F88F27 /* CreateContractViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewControllerUITests.swift; sourceTree = "<group>"; };
 		534ADE40223EAB9300F88F27 /* CreateVehicleViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleViewControllerUITests.swift; sourceTree = "<group>"; };
 		534ADE42223EABB800F88F27 /* CreateCredorViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCredorViewControllerUITests.swift; sourceTree = "<group>"; };
+		534ADE44223ED4C200F88F27 /* LoginViewControllerPickerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerPickerViewExtension.swift; sourceTree = "<group>"; };
+		534ADE4A223EF22300F88F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		534ADE4D223EF24F00F88F27 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		534ADE4E223EF2A600F88F27 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		534ADE51223F17B100F88F27 /* CreateContractViewControllerPhotoPickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewControllerPhotoPickerExtension.swift; sourceTree = "<group>"; };
+		534ADE53223F2BC700F88F27 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		5353000A223D834B003AC039 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
 		5353000C223D8355003AC039 /* CallbackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackEnum.swift; sourceTree = "<group>"; };
 		5353000E223D8369003AC039 /* BaseCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCallback.swift; sourceTree = "<group>"; };
@@ -296,6 +307,7 @@
 		534ADDF8223E798C00F88F27 /* CreateContract */ = {
 			isa = PBXGroup;
 			children = (
+				534ADE50223F178300F88F27 /* Extensions */,
 				534ADE03223E805700F88F27 /* View */,
 				534ADDF9223E79BE00F88F27 /* CreateContractViewController.swift */,
 				534ADDFB223E79F400F88F27 /* CreateContractPresenter.swift */,
@@ -401,6 +413,23 @@
 			path = UITests;
 			sourceTree = "<group>";
 		};
+		534ADE46223EF1ED00F88F27 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE4B223EF22300F88F27 /* Localizable.strings */,
+				534ADE4E223EF2A600F88F27 /* AppStrings.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		534ADE50223F178300F88F27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				534ADE51223F17B100F88F27 /* CreateContractViewControllerPhotoPickerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		53530006223D82EF003AC039 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +507,7 @@
 		53530022223D84F9003AC039 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				534ADE46223EF1ED00F88F27 /* Localizable */,
 				53530023223D8502003AC039 /* Extensions */,
 			);
 			path = Common;
@@ -488,6 +518,7 @@
 			children = (
 				53530024223D850F003AC039 /* Optional.swift */,
 				53530026223D8526003AC039 /* UIViewController.swift */,
+				534ADE53223F2BC700F88F27 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -541,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				53530038223D8617003AC039 /* LoginViewControllerValidationExtension.swift */,
+				534ADE44223ED4C200F88F27 /* LoginViewControllerPickerViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -699,6 +731,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 5353FFCC223D7D54003AC039;
 			productRefGroup = 5353FFD6223D7D54003AC039 /* Products */;
@@ -721,6 +754,7 @@
 				534ADE1E223EA30D00F88F27 /* CreateCredorViewController.xib in Resources */,
 				534ADDD5223D926400F88F27 /* ContractsListViewController.xib in Resources */,
 				5353003B223D863E003AC039 /* LoginViewController.xib in Resources */,
+				534ADE49223EF22300F88F27 /* Localizable.strings in Resources */,
 				5353FFE0223D7D55003AC039 /* Assets.xcassets in Resources */,
 				534ADDF0223DA52E00F88F27 /* ContractsListCell.xib in Resources */,
 				534ADE0D223E94B600F88F27 /* CreateVehicleViewController.xib in Resources */,
@@ -758,6 +792,7 @@
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftValidator/SwiftValidator.framework",
+				"${BUILT_PRODUCTS_DIR}/YangMingShan/YangMingShan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -767,6 +802,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftValidator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YangMingShan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -860,11 +896,15 @@
 				534ADE26223EA37300F88F27 /* CreateCredorContract.swift in Sources */,
 				5353FFD9223D7D54003AC039 /* AppDelegate.swift in Sources */,
 				534ADDE1223D994200F88F27 /* Financing.swift in Sources */,
+				534ADE4F223EF2A600F88F27 /* AppStrings.swift in Sources */,
 				5353001B223D8457003AC039 /* SessionLocalDataSourceImpl.swift in Sources */,
 				5353000F223D8369003AC039 /* BaseCallback.swift in Sources */,
 				534ADDFE223E7A0F00F88F27 /* CreateContractContract.swift in Sources */,
+				534ADE52223F17B100F88F27 /* CreateContractViewControllerPhotoPickerExtension.swift in Sources */,
 				53530037223D85F7003AC039 /* LoginContract.swift in Sources */,
 				5353000D223D8355003AC039 /* CallbackEnum.swift in Sources */,
+				534ADE54223F2BC700F88F27 /* UIImage.swift in Sources */,
+				534ADE45223ED4C200F88F27 /* LoginViewControllerPickerViewExtension.swift in Sources */,
 				534ADE0F223E94C600F88F27 /* CreateVehicleViewController.swift in Sources */,
 				5353002A223D8551003AC039 /* GetAuth.swift in Sources */,
 				53530034223D85D6003AC039 /* LoginPresenter.swift in Sources */,
@@ -927,6 +967,18 @@
 			targetProxy = 5353FFF5223D7D55003AC039 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		534ADE4B223EF22300F88F27 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534ADE4A223EF22300F88F27 /* en */,
+				534ADE4D223EF24F00F88F27 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53530001223D7D55003AC039 /* Debug */ = {
@@ -1024,6 +1076,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1085,6 +1138,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

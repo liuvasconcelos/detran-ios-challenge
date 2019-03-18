@@ -13,6 +13,7 @@ class  ContractsListCell: UITableViewCell {
     @IBOutlet weak var contractNumberLabel: UILabel!
     @IBOutlet weak var contractStatusImageView: UIImageView!
     @IBOutlet weak var detranStatusImageView: UIImageView!
+    @IBOutlet weak var numberLabel: UILabel!
     
     public static let NIB_NAME   = "ContractsListCell"
     public static let IDENTIFIER = "ContractsListCellIdentifier"
@@ -22,7 +23,8 @@ class  ContractsListCell: UITableViewCell {
     }
     
     func configureViewFor(contract: Contract) {
-        self.contractNumberLabel.text = "Número do contrato: \(contract.code!)"
+        self.contractNumberLabel.text = AppStrings.contract_number
+        self.numberLabel.text         = "\(contract.code!)"
         
         if contract.status ?? false {
             self.contractStatusImageView.image = UIImage(named: "check")

@@ -11,13 +11,15 @@ import SwiftValidator
 
 class LoginViewController: UIViewController, LoginViewContract {
     
-    @IBOutlet weak var detranIdentifierTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var chooseStatePickerView: UIPickerView!
+    @IBOutlet weak var detranIdentifier: UITextField!
     
     var loader: UIActivityIndicatorView = UIActivityIndicatorView()
     let validator = Validator()
+    let states = ["Detran Ceará", "Detran Rio de Janeiro"]
     
     lazy var presenter: LoginPresenterContract = {
         return LoginPresenter(view: self,
@@ -33,20 +35,31 @@ class LoginViewController: UIViewController, LoginViewContract {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.chooseStatePickerView.isHidden   = true
+        self.chooseStatePickerView.delegate   = self
+        self.chooseStatePickerView.dataSource = self
+        
+        self.detranIdentifier.placeholder  = states.first
+        self.userNameTextField.placeholder = AppStrings.username
+        self.passwordTextField.placeholder = AppStrings.password
+        self.loginButton.setTitle(AppStrings.login, for: .normal)
         
         if presenter.isUserLogged() {
             self.goToHomeScreen()
         }
     }
-    
+
     @IBAction func login(_ sender: Any) {
         validator.validate(self)
     }
     
+    @IBAction func selectState(_ sender: Any) {
+        chooseStatePickerView.isHidden = false
+    }
+    
     private func registerFieldsToValidate() {
-        validator.registerField(detranIdentifierTextField, rules: [RequiredRule(message: "Required field"), FloatRule(message: "Has to be a number")])
-        validator.registerField(userNameTextField, rules: [RequiredRule(message: "Required field")])
-        validator.registerField(passwordTextField, rules: [RequiredRule(message: "Required field")])
+        validator.registerField(userNameTextField, rules: [RequiredRule(message: AppStrings.required_field)])
+        validator.registerField(passwordTextField, rules: [RequiredRule(message: AppStrings.required_field)])
     }
     
     func loginSuccessful() {

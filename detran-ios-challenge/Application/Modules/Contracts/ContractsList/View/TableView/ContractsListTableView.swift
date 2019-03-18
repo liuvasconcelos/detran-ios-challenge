@@ -34,13 +34,14 @@ class  ContractsListTableView: UITableView, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 70
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ContractsListCell.IDENTIFIER) as? ContractsListCell else {
             return ContractsListCell()
         }
+        cell.isUserInteractionEnabled = false
         cell.configureViewFor(contract: contracts[indexPath.row])
 
         return cell

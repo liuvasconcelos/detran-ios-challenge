@@ -7,6 +7,9 @@ PODS:
   - ObjectMapper (3.4.2)
   - SwiftKeychainWrapper (3.0.1)
   - SwiftValidator (4.0.0)
+  - YangMingShan (2.0.1):
+    - YangMingShan/YMSPhotoPicker (= 2.0.1)
+  - YangMingShan/YMSPhotoPicker (2.0.1)
 
 DEPENDENCIES:
   - Alamofire (= 4.7.3)
@@ -15,6 +18,7 @@ DEPENDENCIES:
   - ObjectMapper (~> 3.4)
   - SwiftKeychainWrapper (= 3.0.1)
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+  - YangMingShan (= 2.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -23,6 +27,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - ObjectMapper
     - SwiftKeychainWrapper
+    - YangMingShan
 
 EXTERNAL SOURCES:
   SwiftValidator:
@@ -41,7 +46,8 @@ SPEC CHECKSUMS:
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftValidator: 58c155c8ae8421ef716a96e52a49984dd54c700c
+  YangMingShan: 561cfbb769e8cf679d3f23d8ae7030402ddb6495
 
-PODFILE CHECKSUM: ce8cd9600b579ddbaff5fa3124ed8192b32fdb47
+PODFILE CHECKSUM: 90ec977b2758e3ef91161ca61550a78421f31e22
 
 COCOAPODS: 1.5.3

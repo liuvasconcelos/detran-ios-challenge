@@ -30,6 +30,11 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
                 }
                 
             case .failure(let error):
+                if response.response?.statusCode == 401 {
+                    let callbackFailed = BaseCallback<[Contract]>.failed(error: "auth")
+                    callback(callbackFailed)
+                    return
+                }
                 let callbackFailed = BaseCallback<[Contract]>.failed(error: error.localizedDescription)
                 callback(callbackFailed)
             }
@@ -52,6 +57,10 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
                 if response.response?.statusCode == 400 {
                     self.sendFormToCreate(contract: ContractRequest(request: contract), callback)
                     return
+                } else if response.response?.statusCode == 401 {
+                    let callbackFailed = BaseCallback<Contract>.failed(error: "auth")
+                    callback(callbackFailed)
+                    return
                 }
                 
                 let callbackFailed = BaseCallback<Contract>.failed(error: error.localizedDescription)
@@ -59,4 +68,27 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
             }
         }
     }
+    
+    public func sendPhoto(photo: UIImage, _ callback: @escaping (BaseCallback<String>) -> Void) {
+        let path      = "contracts/file"
+        let imageData = photo.getCompressedData()
+        let request   = RequestUtils.getRequest(object: "", path: path, method: .post)
+        
+        Alamofire.upload(multipartFormData: { MultipartFormData in
+            MultipartFormData.append(imageData, withName: "image", fileName: "image.jpg", mimeType: "image/*")
+        }, with: request,
+           encodingCompletion: { result in
+            switch result {
+            case .success(_):
+                let callbackSuccess = BaseCallback.success("")
+                callback(callbackSuccess)
+            case .failure(let encodingError):
+                let callbackFailed = BaseCallback<String>.failed(error: encodingError.localizedDescription)
+                callback(callbackFailed)
+            }
+        })
+        
+    }
+    
+    
 }
