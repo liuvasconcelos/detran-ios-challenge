@@ -58,6 +58,9 @@
 "main_payment_recipient_cpf_cnpj" = "CPF/CNPJ do principal recebedor";
 "add_a_contract_success_message"  = "Contrato adicionado com sucesso.";
 "add_a_contract_error_message"    = "Algo aconteceu e os dados não puderam ser carregados.";
+"amount_photos"                   = "Quantidade de fotos";
+"image_sent"                      = "Imagens enviadas";
+"image_fail"                      = "Imagens não enviadas";
 
 // Add a vehicle
 "chassi"                        = "Chassi";

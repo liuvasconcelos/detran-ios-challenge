@@ -12,6 +12,7 @@ target 'detran-ios-challenge' do
     pod 'AlamofireObjectMapper', '~> 5.2'
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
     pod 'SwiftKeychainWrapper', '3.0.1'
+    pod 'YangMingShan', '2.0.1'
   target 'detran-ios-challengeTests' do
     inherit! :search_paths
     # Pods for testing

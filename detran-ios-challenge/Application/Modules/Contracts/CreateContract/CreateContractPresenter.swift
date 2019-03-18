@@ -15,6 +15,10 @@ class CreateContractPresenter: CreateContractPresenterContract {
     private let getAuth: GetAuth
     private let saveSession: SaveSession
     
+    var remainingPhotos = [UIImage]()
+    var successPhotos   = [String]()
+    var failPhotos      = [String]()
+    
     init(view: CreateContractViewContract, createContract: CreateContract, getAuth: GetAuth, saveSession: SaveSession) {
         self.view           = view
         self.createContract = createContract
@@ -22,12 +26,16 @@ class CreateContractPresenter: CreateContractPresenterContract {
         self.saveSession    = saveSession
     }
     
-    func sendFormToCreate(contract: ContractRequest) {
+    func sendFormToCreate(contract: ContractRequest, photos: [UIImage]) {
         self.view.showLoader()
+        self.remainingPhotos = photos
+        self.sendContract(contract: contract, photos: photos)
+    }
+    
+    fileprivate func sendContract(contract: ContractRequest, photos: [UIImage]) {
         createContract.sendFormToCreate(contract: contract) { (callback) in
             callback.onSuccess({ (_) in
-                self.view.hideLoader()
-                self.view.showSuccessAlert()
+                self.sendPhotos()
             })
             
             callback.onFailed { error in
@@ -37,7 +45,7 @@ class CreateContractPresenter: CreateContractPresenterContract {
                         callback.onSuccess { authResponse in
                             self.saveSession.saveSession(auth: authResponse)
                             self.view.hideLoader()
-                            self.sendFormToCreate(contract: contract)
+                            self.sendFormToCreate(contract: contract, photos: photos)
                             return
                         }
                         callback.onFailed({ (error) in
@@ -50,6 +58,27 @@ class CreateContractPresenter: CreateContractPresenterContract {
                 self.view.hideLoader()
                 self.view.showError()
             }
+        }
+    }
+    
+    
+    fileprivate func sendPhotos() {
+        if self.remainingPhotos.isEmpty {
+            self.view.hideLoader()
+            self.view.showSuccessAlert(successPhotos: successPhotos, failPhotos: failPhotos)
+            return
+        }
+        createContract.sendPhoto(photo: remainingPhotos.first ?? UIImage()) { (callback) in
+            callback.onSuccess({ (_) in
+                self.successPhotos.append(self.remainingPhotos.first!.description)
+                self.remainingPhotos.removeLast()
+                self.sendPhotos()
+            })
+            callback.onFailed({ (error) in
+                self.failPhotos.append(self.remainingPhotos.first!.description)
+                self.remainingPhotos.removeLast()
+                self.sendPhotos()
+            })
         }
     }
 }

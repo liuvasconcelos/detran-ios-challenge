@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YangMingShan
 
 class CreateContractViewController: UIViewController, CreateContractViewContract {
     
@@ -65,8 +66,12 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
     @IBOutlet weak var mainPaymentRecipientCpfCnpj: UITextField!
     
     @IBOutlet weak var sendContractButton: UIButton!
+    @IBOutlet weak var selectPhotosButton: UIButton!
+    @IBOutlet weak var photosAmountLabel: UILabel!
     
     var loader: UIActivityIndicatorView = UIActivityIndicatorView()
+    
+    var imagesSelected = [UIImage]()
 
     lazy var presenter: CreateContractPresenterContract = {
         return CreateContractPresenter(view: self,
@@ -114,8 +119,20 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
         mainPaymentRecipientCpfCnpjLabel.text = AppStrings.main_payment_recipient_cpf_cnpj
         
         sendContractButton.setTitle(AppStrings.register_a_contract, for: .normal)
+        photosAmountLabel.text = "\(AppStrings.amount_photos): \(self.imagesSelected.count)"
     }
     
+    @IBAction func selectPhotos(_ sender: Any) {
+        let pickerViewController = YMSPhotoPickerViewController.init()
+        
+        pickerViewController.numberOfPhotoToSelect = 10
+        pickerViewController.theme.cameraIconColor = UIColor.orange
+        pickerViewController.theme.cameraVeilColor = UIColor.clear
+        pickerViewController.theme.orderTintColor  = UIColor.orange
+        pickerViewController.theme.statusBarStyle  = .lightContent
+        
+        self.yms_presentCustomAlbumPhotoView(pickerViewController, delegate: self)
+    }
     @IBAction func sendFormToCreate(_ sender: Any) {
         presenter.sendFormToCreate(contract: ContractRequest(code: 0,
                                                              endUsersDocument: "123456",
@@ -146,11 +163,16 @@ class CreateContractViewController: UIViewController, CreateContractViewContract
                                                                                       mainRecipientPayment: mainPaymentRecipient.text ?? "",
                                                                                       mainRecipientCpfCnpj: mainPaymentRecipientCpfCnpj.text ?? ""),
                                                              vehicle: nil,
-                                                             credor: nil))
+                                                             credor: nil),
+                                   photos: self.imagesSelected)
     }
     
-    func showSuccessAlert() {
-        let alertController = UIAlertController(title: "", message: AppStrings.add_a_contract_success_message, preferredStyle: .alert)
+    func showSuccessAlert(successPhotos: [String], failPhotos: [String]) {
+        let successPhotosSent = "\(AppStrings.image_sent): \(successPhotos.count)"
+
+        let failPhotosSent = "\(AppStrings.image_fail): \(failPhotos.count)"
+
+        let alertController = UIAlertController(title: AppStrings.add_a_contract_success_message, message: "\(successPhotosSent)\n\(failPhotosSent)", preferredStyle: .alert)
         let okButton        = UIAlertAction(title: "Ok", style: .cancel) { (action:UIAlertAction) in
             self.dismissViewController()
         }

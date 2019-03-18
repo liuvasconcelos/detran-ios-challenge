@@ -69,4 +69,26 @@ public class ContractRemoteDataSourceImpl: ContractRemoteDataSource {
         }
     }
     
+    public func sendPhoto(photo: UIImage, _ callback: @escaping (BaseCallback<String>) -> Void) {
+        let path      = "contracts/file"
+        let imageData = photo.getCompressedData()
+        let request   = RequestUtils.getRequest(object: "", path: path, method: .post)
+        
+        Alamofire.upload(multipartFormData: { MultipartFormData in
+            MultipartFormData.append(imageData, withName: "image", fileName: "image.jpg", mimeType: "image/*")
+        }, with: request,
+           encodingCompletion: { result in
+            switch result {
+            case .success(_):
+                let callbackSuccess = BaseCallback.success("")
+                callback(callbackSuccess)
+            case .failure(let encodingError):
+                let callbackFailed = BaseCallback<String>.failed(error: encodingError.localizedDescription)
+                callback(callbackFailed)
+            }
+        })
+        
+    }
+    
+    
 }

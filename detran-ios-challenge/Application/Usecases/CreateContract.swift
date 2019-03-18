@@ -6,7 +6,7 @@
 //  Copyright © 2019 Livia Vasconcelos. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CreateContract {
     
@@ -30,5 +30,18 @@ class CreateContract {
         })
     }
     
+    func sendPhoto(photo: UIImage, _ usecaseCallback: @escaping (BaseCallback<String>) -> Void) {
+        remoteDataSource?.sendPhoto(photo: photo, { (callback) in
+            callback.onSuccess({ (response) in
+                let callbackSuccess = BaseCallback.success(response)
+                usecaseCallback(callbackSuccess)
+            })
+
+            callback.onFailed({ (error) in
+                let callbackFailed = BaseCallback<String>.failed(error: error)
+                usecaseCallback(callbackFailed)
+            })
+        })
+    }
 }
 

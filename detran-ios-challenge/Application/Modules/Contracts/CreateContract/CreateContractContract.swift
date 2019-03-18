@@ -6,13 +6,15 @@
 //  Copyright © 2019 Livia Vasconcelos. All rights reserved.
 //
 
+import UIKit
+
 protocol CreateContractViewContract {
-    func showSuccessAlert()
+    func showSuccessAlert(successPhotos: [String], failPhotos: [String])
     func showLoader()
     func hideLoader()
     func showError()
 }
 
 protocol CreateContractPresenterContract {
-    func sendFormToCreate(contract: ContractRequest)
+    func sendFormToCreate(contract: ContractRequest, photos: [UIImage])
 }

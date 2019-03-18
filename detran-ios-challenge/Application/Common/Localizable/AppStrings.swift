@@ -62,6 +62,10 @@ public class AppStrings {
     public static let main_payment_recipient_cpf_cnpj = localized("main_payment_recipient_cpf_cnpj")
     public static let add_a_contract_success_message  = localized("add_a_contract_success_message")
     public static let add_a_contract_error_message    = localized("add_a_contract_error_message")
+    public static let amount_photos                   = localized("amount_photos")
+    public static let image_sent                      = localized("image_sent")
+    public static let image_fail                      = localized("image_fail")
+
     
     // Add a vehicle
     public static let chassi                        = localized("chassi")
