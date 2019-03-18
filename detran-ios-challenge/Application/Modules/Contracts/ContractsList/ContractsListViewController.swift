@@ -23,6 +23,7 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setIdentifiers()
         contractsTableView.viewContract = self
         
         self.navigationItem.title = AppStrings.contracts
@@ -32,6 +33,10 @@ class ContractsListViewController: UIViewController , ContractsListViewContract 
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
         self.presenter.loadContracts()
+    }
+    
+    fileprivate func setIdentifiers() {
+        contractsTableView.accessibilityIdentifier = "contractsTableView"
     }
     
     func show(contracts: [Contract]) {

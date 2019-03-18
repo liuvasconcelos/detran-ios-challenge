@@ -31,10 +31,15 @@ class LoginViewController: UIViewController, LoginViewContract {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerFieldsToValidate()
+        self.setIdentifiers()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
+        
         self.chooseStatePickerView.isHidden   = true
         self.chooseStatePickerView.delegate   = self
         self.chooseStatePickerView.dataSource = self
@@ -48,7 +53,17 @@ class LoginViewController: UIViewController, LoginViewContract {
             self.goToHomeScreen()
         }
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
+    fileprivate func setIdentifiers() {
+        self.loginButton.accessibilityIdentifier       = "loginButton"
+        self.userNameTextField.accessibilityIdentifier = "usernameTextField"
+        self.passwordTextField.accessibilityIdentifier = "passwordTextField"
+    }
+    
     @IBAction func login(_ sender: Any) {
         validator.validate(self)
     }

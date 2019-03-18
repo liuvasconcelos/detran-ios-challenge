@@ -23,6 +23,7 @@ class HomeViewController: UIViewController, HomeViewContract {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setIdentifiers()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +35,14 @@ class HomeViewController: UIViewController, HomeViewContract {
         self.addAVehicleButton.setTitle(AppStrings.register_a_vehicle, for: .normal)
         self.addACreditorButton.setTitle(AppStrings.register_a_credor, for: .normal)
         self.logoutButton.setTitle(AppStrings.logout, for: .normal)
+    }
+    
+    fileprivate func setIdentifiers() {
+        self.logoutButton.accessibilityIdentifier          = "logoutButton"
+        self.seeAllContractsButton.accessibilityIdentifier = "contractListButton"
+        self.addAContractButton.accessibilityIdentifier    = "createContractButton"
+        self.addAVehicleButton.accessibilityIdentifier     = "createVehicleButton"
+        self.addACreditorButton.accessibilityIdentifier    = "createCreditorButton"
     }
     
     @IBAction func goToContractsListScreen(_ sender: Any) {
