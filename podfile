@@ -13,10 +13,6 @@ target 'detran-ios-challenge' do
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
     pod 'SwiftKeychainWrapper', '3.0.1'
     pod 'YangMingShan', '2.0.1'
-  target 'detran-ios-challengeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
   target 'detran-ios-challengeUITests' do
     inherit! :search_paths
